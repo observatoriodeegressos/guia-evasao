@@ -89,7 +89,7 @@ Os indicadores não capturam produções científicas não registradas ou não d
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos da RFEPCT com pelo menos uma produção registrada na Plataforma Lattes — seja ela bibliográfica, técnica ou de propriedade intelectual.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor. Valores elevados indicam que um número maior de evadidos da RFEPCT está engajado em atividades de produção científica, científica, tecnológica ou cultural — o que reflete positivamente sobre o impacto formativo das instituições.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor. Valores elevados indicam que um número maior de evadidos da RFEPCT está engajado em atividades de produção científica, tecnológica ou cultural — o que reflete positivamente sobre o impacto formativo das instituições.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Evadidos com Produção = ∑ evadidos da RFEPCT com ao menos uma produção cadastrada no Lattes</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP 2017–2022 · Plataforma Lattes</td></tr>
