@@ -11,7 +11,7 @@ Veja qual é a o nome da próxima página e da anterior e adicione abaixo no for
 
 # {{ page.title }}
 
-O quadro a seguir relaciona as bases que alimentam a Plataforma BI do Observatório de Egressos, indicando o domínio analítico, a periodicidade e o uso primário em cada módulo.
+O quadro a seguir relaciona as bases que alimentam a Plataforma BI PNP Evadidos, indicando o domínio analítico, a periodicidade e o uso primário em cada módulo.
 
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
