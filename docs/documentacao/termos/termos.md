@@ -72,11 +72,11 @@ Os termos a seguir são utilizados ao longo do relatório com sentido técnico e
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td><strong>Produção Acadêmica</strong></td><td>Conjunto de produções bibliográficas, técnicas e de propriedade intelectual registradas pelos evadidos da RFEPCT em bases acadêmicas integradas, especialmente no Currículo Lattes.</td></tr>
+    <tr><td><strong>Produção Científica</strong></td><td>Conjunto de produções bibliográficas, técnicas e de propriedade intelectual registradas pelos evadidos da RFEPCT em bases acadêmicas integradas, especialmente no Currículo Lattes.</td></tr>
     <tr><td><strong>Produção bibliográfica</strong></td><td>Publicações de natureza acadêmica, científica, técnica ou cultural registradas em veículos de divulgação do conhecimento. Na Plataforma Lattes abrange: artigos completos em periódicos; livros e capítulos; trabalhos completos em anais; resumos; textos em jornais ou revistas; apresentações; traduções; prefácios e posfácios; partituras, entre outros.</td></tr>
     <tr><td><strong>Produção Técnica</strong></td><td>Produtos e processos desenvolvidos a partir de conhecimentos científicos e tecnológicos, com aplicação prática voltada à solução de problemas da sociedade, do setor produtivo ou das organizações. Conforme o GT de Produção Técnica da CAPES, organiza-se em quatro eixos: Produtos e Processos; Atividades de Educação; Divulgação; e Serviços Técnicos, e abrange 21 categorias.</td></tr>
     <tr><td><strong>Propriedade Intelectual</strong></td><td>Conjunto de direitos conferidos pelo ordenamento jurídico às criações do intelecto humano. Três ramos: (i) Propriedade Industrial — invenções, modelos de utilidade, marcas, desenhos industriais e indicações geográficas (Lei nº 9.279/1996); (ii) Direito Autoral — obras literárias, artísticas, científicas e programas de computador (Leis nº 9.610/1998 e 9.609/1998); (iii) Proteções sui generis — cultivares, topografias de circuitos integrados e conhecimentos tradicionais.</td></tr>
-    <tr><td><strong>Evadido com Produção Acadêmica</strong></td><td>Evadido da RFEPCT identificado com ao menos um registro de produção bibliográfica, técnica ou de propriedade intelectual no Currículo Lattes.</td></tr>
+    <tr><td><strong>Evadido com Produção Científica</strong></td><td>Evadido da RFEPCT identificado com ao menos um registro de produção bibliográfica, técnica ou de propriedade intelectual no Currículo Lattes.</td></tr>
   </tbody>
 </table>
 

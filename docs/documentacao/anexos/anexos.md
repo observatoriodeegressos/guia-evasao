@@ -33,7 +33,7 @@ O quadro a seguir relaciona as bases que alimentam a Plataforma BI PNP Evadidos,
     <tr><td>CAPES</td><td>Acadêmica</td><td>Anual</td><td>Pós-graduação stricto sensu e produção técnica no exterior</td></tr>
     <tr><td>Plataforma Lattes</td><td>Científica</td><td>Contínua</td><td>Produção bibliográfica, técnica e propriedade intelectual</td></tr>
     <tr><td>INEP</td><td>Educacional</td><td>Anual</td><td>Novos vínculos discentes e continuidade educacional</td></tr>
-    <tr><td>CNPq — Áreas do Conhecimento</td><td>Classificatória</td><td>Versionada</td><td>Categorização temática da produção acadêmica</td></tr>
+    <tr><td>CNPq — Áreas do Conhecimento</td><td>Classificatória</td><td>Versionada</td><td>Categorização temática da produção científica</td></tr>
   </tbody>
 </table>
 

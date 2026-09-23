@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Módulo de Produção Acadêmica"
+title: "Módulo de Produção Científica"
 ---
 
 <!-- Parte de Navegação
@@ -15,7 +15,7 @@ Veja qual é a o nome da próxima página e da anterior e adicione abaixo no for
 
 ## Escopo e leitura
 
-O módulo mensura a atividade técnico-científica dos evadidos da RFEPCT por meio da identificação de produções registradas em bases curriculares e científicas. Utiliza os evadidos como população de referência e os registros de produção acadêmica como evidência operacional de atividade científica.
+O módulo mensura a atividade técnico-científica dos evadidos da RFEPCT por meio da identificação de produções registradas em bases curriculares e científicas. Utiliza os evadidos como população de referência e os registros de produção científica como evidência operacional de atividade científica.
 
 O módulo contempla indicadores relacionados à produção bibliográfica, produção técnica, participação em eventos científicos, orientação acadêmica, inovação e demais atividades registradas nos currículos dos evadidos. As análises podem ser realizadas em diferentes horizontes temporais e níveis de agregação institucional, territorial e sociodemográfica.
 
@@ -27,7 +27,7 @@ Os indicadores não capturam produções científicas não registradas ou não d
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 30%"><strong>Indicadores centrais</strong></td><td>Total de evadidos com Currículo Lattes · Total de evadidos · Taxa de evadidos com Lattes · Total de Produção Acadêmica · Total de evadidos com Produção · Média de Produção Acadêmica.</td></tr>
+    <tr><td style="width: 30%"><strong>Indicadores centrais</strong></td><td>Total de evadidos com Currículo Lattes · Total de evadidos · Taxa de evadidos com Lattes · Total de Produção Científica · Total de evadidos com Produção · Média de Produção Científica.</td></tr>
     <tr><td><strong>Indicadores desagregados</strong></td><td>Lattes por UF · curso · tipo de curso · turno · campus · categoria · tipo de produção bibliográfica · tipo de produção técnica · tipo de propriedade intelectual.</td></tr>
   </tbody>
 </table>
@@ -72,31 +72,31 @@ Os indicadores não capturam produções científicas não registradas ou não d
   </tbody>
 </table>
 
-### 04 · Total de Produção Acadêmica · *Quanto maior, melhor*
+### 04 · Total de Produção Científica · *Quanto maior, melhor*
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr><td style="width: 25%"><strong>Definição</strong></td><td>Soma a produção absoluta dos evadidos no Currículo Lattes, categorizada em: bibliográfica, técnica e propriedade intelectual.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor. Valores mais elevados indicam maior volume de produção acumulada pelos evadidos.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Total de Produção Acadêmica = ∑ (prod_bibliográfica) + ∑ (prod_técnica) + ∑ (prop_intelectual)<br><em>prod_bibliográfica</em>: publicações acadêmicas e técnico-científicas vinculadas aos evadidos.<br><em>prod_técnica</em>: produtos, processos, serviços e materiais técnico-profissionais desenvolvidos pelos evadidos.<br><em>prop_intelectual</em>: ativos intelectuais registrados ou depositados pelos evadidos em órgãos de proteção da propriedade industrial e intelectual.</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Total de Produção Científica = ∑ (prod_bibliográfica) + ∑ (prod_técnica) + ∑ (prop_intelectual)<br><em>prod_bibliográfica</em>: publicações acadêmicas e técnico-científicas vinculadas aos evadidos.<br><em>prod_técnica</em>: produtos, processos, serviços e materiais técnico-profissionais desenvolvidos pelos evadidos.<br><em>prop_intelectual</em>: ativos intelectuais registrados ou depositados pelos evadidos em órgãos de proteção da propriedade industrial e intelectual.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP 2017–2022 · Plataforma Lattes</td></tr>
   </tbody>
 </table>
 
-### 05 · Total de evadidos com Produção Acadêmica · *Quanto maior, melhor*
+### 05 · Total de evadidos com Produção Científica · *Quanto maior, melhor*
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos da RFEPCT com pelo menos uma produção registrada na Plataforma Lattes — seja ela bibliográfica, técnica ou de propriedade intelectual.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor. Valores elevados indicam que um número maior de evadidos da RFEPCT está engajado em atividades de produção acadêmica, científica, tecnológica ou cultural — o que reflete positivamente sobre o impacto formativo das instituições.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor. Valores elevados indicam que um número maior de evadidos da RFEPCT está engajado em atividades de produção científica, científica, tecnológica ou cultural — o que reflete positivamente sobre o impacto formativo das instituições.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Evadidos com Produção = ∑ evadidos da RFEPCT com ao menos uma produção cadastrada no Lattes</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP 2017–2022 · Plataforma Lattes</td></tr>
   </tbody>
 </table>
 
-### 06 · Média de Produção Acadêmica · *Quanto maior, melhor*
+### 06 · Média de Produção Científica · *Quanto maior, melhor*
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
@@ -124,12 +124,12 @@ Detalham a composição interna dos resultados identificados pelos indicadores c
     <tr><td>Taxa de evadidos com Lattes por UF</td><td>Percentual de evadidos com Currículo Lattes identificado segundo a UF.</td><td>Identificar diferenças territoriais na presença de registros curriculares.</td></tr>
     <tr><td>Taxa de evadidos com Lattes por curso</td><td>Percentual de evadidos com Currículo Lattes segundo o curso concluído.</td><td>Comparar a presença de registros curriculares entre diferentes formações.</td></tr>
     <tr><td>Taxa de evadidos com Lattes por tipo de curso</td><td>Percentual de evadidos com Lattes segundo a tipologia da formação cursada.</td><td>Analisar diferenças de vinculação à Plataforma Lattes entre modalidades formativas.</td></tr>
-    <tr><td>Média de produção acadêmica por UF</td><td>Média de produções registradas nos currículos Lattes dos evadidos segundo a UF.</td><td>Identificar diferenças territoriais na intensidade da produção registrada.</td></tr>
-    <tr><td>Média de produção acadêmica por campus</td><td>Média de produções nos currículos Lattes segundo o campus de origem.</td><td>Comparar a intensidade da produção entre unidades institucionais.</td></tr>
-    <tr><td>Número de produção por curso</td><td>Quantidade de produções nos currículos Lattes segundo o curso concluído.</td><td>Identificar cursos com maior concentração de produção acadêmica registrada.</td></tr>
+    <tr><td>Média de produção científica por UF</td><td>Média de produções registradas nos currículos Lattes dos evadidos segundo a UF.</td><td>Identificar diferenças territoriais na intensidade da produção registrada.</td></tr>
+    <tr><td>Média de produção científica por campus</td><td>Média de produções nos currículos Lattes segundo o campus de origem.</td><td>Comparar a intensidade da produção entre unidades institucionais.</td></tr>
+    <tr><td>Número de produção por curso</td><td>Quantidade de produções nos currículos Lattes segundo o curso concluído.</td><td>Identificar cursos com maior concentração de produção científica registrada.</td></tr>
     <tr><td>Número de produção por tipo de curso</td><td>Quantidade de produções nos currículos Lattes segundo a tipologia da formação.</td><td>Comparar o volume de produção entre modalidades formativas.</td></tr>
     <tr><td>Número de produção por turno</td><td>Quantidade de produções nos currículos Lattes segundo o turno de oferta do curso.</td><td>Identificar diferenças no volume de produção associadas ao turno de formação.</td></tr>
-    <tr><td>Número de produção por categoria</td><td>Quantidade de produções segundo categorias gerais — bibliográfica, técnica ou propriedade intelectual.</td><td>Caracterizar a composição geral da produção acadêmica dos evadidos.</td></tr>
+    <tr><td>Número de produção por categoria</td><td>Quantidade de produções segundo categorias gerais — bibliográfica, técnica ou propriedade intelectual.</td><td>Caracterizar a composição geral da produção científica dos evadidos.</td></tr>
     <tr><td>Número de produção por tipo de produção bibliográfica</td><td>Quantidade de produções bibliográficas segundo o tipo — artigos, livros, capítulos ou trabalhos em eventos.</td><td>Identificar os principais formatos de produção bibliográfica.</td></tr>
     <tr><td>Número de produção por tipo de produção técnica</td><td>Quantidade de produções técnicas segundo o tipo — relatórios, softwares, produtos tecnológicos ou trabalhos técnicos.</td><td>Identificar os principais formatos de produção técnica.</td></tr>
     <tr><td>Número de produção por tipo de propriedade intelectual</td><td>Quantidade de registros segundo o tipo — patentes, programas de computador, marcas ou desenhos industriais.</td><td>Caracterizar a participação dos evadidos em atividades de inovação formalmente registradas.</td></tr>

@@ -11,11 +11,11 @@ Veja qual é a o nome da próxima página e da anterior e adicione abaixo no for
 
 # {{ page.title }}
 
-A organização dos indicadores em módulos fortalece a capacidade analítica, comparativa e gerencial do Observatório de Evadidos da RFEPCT. A separação entre Empregabilidade, Salários, Empreendedorismo, Produção Acadêmica e Trajetória Acadêmica distingue dimensões complementares das trajetórias dos evadidos, reduz ambiguidades conceituais e amplia a precisão interpretativa dos resultados.
+A organização dos indicadores em módulos fortalece a capacidade analítica, comparativa e gerencial do Observatório de Evadidos da RFEPCT. A separação entre Empregabilidade, Salários, Empreendedorismo, Produção Científica e Trajetória Acadêmica distingue dimensões complementares das trajetórias dos evadidos, reduz ambiguidades conceituais e amplia a precisão interpretativa dos resultados.
 
 O módulo de Empregabilidade mensura a inserção dos evadidos no mercado de trabalho formal. O módulo de Salários analisa os rendimentos dos evadidos ocupados. O módulo de Empreendedorismo identifica a participação dos evadidos em empresas formalmente registradas.
 
-O módulo de Produção Acadêmica mensura a produção bibliográfica, técnica e de propriedade intelectual registrada nas bases curriculares analisadas. O módulo de Trajetória Acadêmica acompanha a continuidade da formação educacional.
+O módulo de Produção Científica mensura a produção bibliográfica, técnica e de propriedade intelectual registrada nas bases curriculares analisadas. O módulo de Trajetória Acadêmica acompanha a continuidade da formação educacional.
 
 A adoção de fichas técnicas amplia a transparência metodológica e favorece a auditabilidade dos indicadores. Ao explicitar definição operacional, fórmula de cálculo, variáveis utilizadas, níveis de agregação, periodicidade, fontes e limitações analíticas, os indicadores passam a possuir critérios claros de cálculo e interpretação.
 

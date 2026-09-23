@@ -32,7 +32,7 @@ itens:
       - title: "Trajetória Acadêmica"
         href: "/documentacao/modulos/trajetoria_academica"
         icon: "fas fa-route"
-      - title: "Produção Acadêmica"
+      - title: "Produção Científica"
         href: "/documentacao/modulos/producao_academica"
         icon: "fas fa-flask"
   - title: "Referências"
