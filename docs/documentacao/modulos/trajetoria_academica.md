@@ -1,130 +1,115 @@
 ---
 layout: default
-title: "Módulo de Trajetória Acadêmica"
+title: "Módulo 4 · Trajetória Acadêmica"
 ---
-
-<!-- Parte de Navegação
-
-Veja qual é a o nome da próxima página e da anterior e adicione abaixo no formato:
-
--->
 
 # {{ page.title }}
 
-> **Continuidade da formação educacional.** Mensura a continuidade da formação educacional dos evadidos da RFEPCT por meio da identificação de vínculos acadêmicos em cursos de graduação e pós-graduação registrados em bases administrativas e curriculares.
+> **Continuidade da formação após a evasão.** A evasão em determinado curso não implica necessariamente interrupção da trajetória educacional. O evadido pode continuar os estudos em outro curso, nível de ensino ou instituição.
 
-## Escopo e leitura
+O módulo Trajetória Acadêmica identifica registros de continuidade da formação educacional dos evadidos após a evasão observada na Rede Federal.
 
-O módulo mensura a continuidade da formação educacional dos evadidos da RFEPCT por meio da identificação de vínculos acadêmicos em cursos de graduação e pós-graduação registrados em bases administrativas e curriculares.
+As fontes integradas ao módulo permitem identificar determinados registros de pós-graduação *stricto sensu* realizados no Brasil e informações relacionadas a diplomas obtidos no exterior submetidos aos processos de reconhecimento registrados na Plataforma Carolina Bori.
 
-O módulo contempla indicadores relacionados ao prosseguimento dos estudos, níveis de formação alcançados, mobilidade acadêmica e continuidade da trajetória educacional dos evadidos. As análises podem ser realizadas em diferentes horizontes temporais e níveis de agregação institucional, territorial e sociodemográfica.
-
-A metodologia baseia-se no pareamento entre registros da Plataforma Nilo Peçanha, bases educacionais (CAPES, Plataforma Carolina Bori) e currículos identificados na Plataforma Lattes. Os indicadores dependem da disponibilidade, atualização e consistência das informações registradas nas bases utilizadas.
-
-Os indicadores não capturam trajetórias acadêmicas não registradas administrativamente ou não declaradas nas bases de origem. Os resultados devem ser interpretados como medidas de continuidade formal da formação acadêmica, restritas aos registros identificáveis nas bases utilizadas.
-
-### Estrutura do módulo
+## Organização do módulo
 
 <table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th style="width: 30%; text-align: center">Aba</th>
+      <th style="width: 70%; text-align: center">Conteúdo</th>
+    </tr>
+  </thead>
   <tbody>
-    <tr><td style="width: 30%"><strong>Indicadores centrais</strong></td><td>Total de evadidos com trajetória · Total de evadidos na PNP · Taxa de trajetória acadêmica · Fluxos acadêmicos · Taxa de movimentação e permanência.</td></tr>
-    <tr><td><strong>Indicadores desagregados</strong></td><td>Trajetórias por curso · tipo de curso · turno · status acadêmico · tipo de trajetória (vertical/horizontal/reversão) · nível subsequente.</td></tr>
+    <tr><td><strong>Visão Geral</strong></td><td>Apresenta indicadores de trajetória acadêmica identificada.</td></tr>
+    <tr><td><strong>Trajetórias por curso</strong></td><td>Apresenta os resultados segundo características do curso de origem.</td></tr>
+    <tr><td><strong>Trajetórias por atributos</strong></td><td>Apresenta os resultados segundo características sociodemográficas.</td></tr>
+    <tr><td><strong>Dinâmica das trajetórias</strong></td><td>Apresenta a situação e os tipos de percurso acadêmico observados.</td></tr>
+    <tr><td><strong>Destino das trajetórias</strong></td><td>Apresenta o curso e a localização das formações posteriormente identificadas.</td></tr>
   </tbody>
 </table>
-
-> **Tipos de trajetória.** *Progressão vertical*: curso de destino de nível superior ao do curso concluído na RFEPCT. *Progressão horizontal*: curso de destino de mesmo nível. *Reversão de nível*: curso de destino de nível anterior.
 
 ## Indicadores centrais
 
-### 01 · Total de evadidos com trajetória acadêmica identificada · *Quanto maior, melhor*
+### 01 · Total de evadidos com trajetória acadêmica identificada · *Descritivo*
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza o total de evadidos que tiveram continuidade acadêmica stricto sensu identificada nas bases de pós-graduação ou reconhecimento de trajetória.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor. Mede a extensão e o alcance da continuidade acadêmica — indicador estritamente quantitativo, não avalia qualidade.</td></tr>
-    <tr><td><strong>Observação de uso</strong></td><td>Deve ser interpretado junto ao total de evadidos, pois instituições maiores tendem a apresentar maior volume absoluto.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Total com trajetória = ∑ (quantidade_traj)</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CAPES · PNP 2017–2022 · Plataforma Carolina Bori</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos para os quais foi identificado pelo menos um registro acadêmico elegível nas bases utilizadas pelo módulo.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>trajetória</sub> = ∑ I(Trajetória<sub>i</sub> = 1)</td></tr>
+    <tr><td><strong>Fontes</strong></td><td>PNP, CAPES e Plataforma Carolina Bori</td></tr>
   </tbody>
 </table>
 
-### 02 · Total de evadidos · *Quanto maior, melhor*
+### 02 · Total de evadidos e total de registros de evasão · *Descritivo*
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza o total de evadidos registrados na base PNP no contexto de análise, sem exclusão de dupla formação, pois o indicador considera a trajetória acadêmica do evadido ao longo do tempo. Serve como denominador da taxa de trajetória acadêmica.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor apenas para fins de cobertura da base. Não mede desempenho acadêmico.</td></tr>
-    <tr><td><strong>Observação de uso</strong></td><td>Deve ser usado como base de comparação para evitar interpretações distorcidas de totais absolutos.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Total de evadidos = ∑ (quantidade_evadidos)</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>PNP 2017–2022 · Plataforma Carolina Bori</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>O total de evadidos contabiliza pessoas únicas após aplicação das regras de identificação e deduplicação.<br>O total de registros de evasão contabiliza as ocorrências de evasão consideradas elegíveis. Uma pessoa pode possuir mais de um registro.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Total de evadidos = ∑ Pessoas únicas<br>Total de registros de evasão = ∑ Registros elegíveis</td></tr>
+    <tr><td><strong>Fonte</strong></td><td>PNP</td></tr>
   </tbody>
 </table>
 
-### 03 · Taxa de trajetória · *Quanto maior, melhor*
+### 03 · Fluxos acadêmicos · *Descritivo*
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Mede a proporção de evadidos da base PNP com trajetória acadêmica identificada em bases de continuidade de estudos. O numerador considera evadidos identificados via CAPES e Carolina Bori; o denominador, o total de evadidos na base PNP no contexto de filtro selecionado.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor. Indica maior continuidade acadêmica identificada entre os evadidos.</td></tr>
-    <tr><td><strong>Observação de uso</strong></td><td>É o indicador central do módulo. Deve ser analisado com filtros de ano de conclusão, instituição, UF, região, nível de ensino, cor ou raça, sexo, faixa etária, renda familiar, turno e modalidade.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de trajetória = ∑ (quantidade_traj) / ∑ (quantidade_evadidos)</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CAPES · PNP 2017–2022 · Plataforma Carolina Bori</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Representa a combinação entre o tipo ou nível do curso associado à evasão e o tipo ou nível da formação posteriormente identificada.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Fluxo<sub>origem → destino</sub> = ∑ Trajetórias<sub>origem → destino</sub></td></tr>
+    <tr><td><strong>Fontes</strong></td><td>PNP, CAPES e Plataforma Carolina Bori</td></tr>
   </tbody>
 </table>
 
-### 04 · Fluxos acadêmicos · *Descritivo*
+### 04 · Taxa de movimentação e permanência por UF · *Descritivo*
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Combinação entre o nível/modalidade de formação concluído pelo evadido na RFEPCT (curso de origem) e o nível/modalidade de formação em que ele foi identificado posteriormente (curso de destino), compondo o percurso educacional observado.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Não aplicável. O indicador possui caráter descritivo e analítico — destinado à identificação dos padrões de continuidade e mobilidade acadêmica dos evadidos.</td></tr>
-    <tr><td><strong>Observação de uso</strong></td><td>O denominador exclui abandono e outras situações não classificadas como Titulado ou Matriculado no modelo DAX.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Fluxo Acadêmico = ∑ (quantidade de evadidos por combinação origem → destino)</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CAPES · PNP 2017–2022 · Plataforma Carolina Bori</td></tr>
-  </tbody>
-</table>
-
-### 05 · Taxa de movimentação e permanência · *Interpretativo*
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a mobilidade geográfica dos evadidos no sistema de educação superior, refletindo o deslocamento interestadual e interinstitucional.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Interpretativa. Maiores taxas de permanência podem indicar fortalecimento das redes locais de formação e capacidade regional de retenção acadêmica. Maiores taxas de movimentação podem indicar ampliação da mobilidade acadêmica e busca por oportunidades formativas em outras unidades federativas.</td></tr>
-    <tr><td><strong>Observação de uso</strong></td><td>A UF apresentada na linha principal representa a UF de origem do evadido na RFEPCT. As linhas detalhadas representam as UFs de destino identificadas nas trajetórias. Os percentuais de movimentação e permanência são complementares, totalizando 100% para cada UF analisada.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de movimentação (%) = [ ∑ (qtd_evadidos com UF_destino ≠ UF_origem) / ∑ (qtd_evadidos com trajetória) ] × 100<br>Taxa de permanência (%) = [ ∑ (qtd_evadidos com UF_destino = UF_origem) / ∑ (qtd_evadidos com trajetória) ] × 100</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CAPES · PNP 2017–2022 · Plataforma Carolina Bori</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Apresenta a distribuição territorial dos evadidos que possuem trajetória acadêmica posteriormente identificada.<br>A UF de origem corresponde à UF associada ao curso no qual ocorreu a evasão.<br>A UF de destino corresponde à localização da formação posteriormente identificada.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de movimentação = N(UF<sub>destino</sub> ≠ UF<sub>origem</sub>) / N<sub>trajetórias com UF válida</sub> × 100<br>Taxa de permanência = N(UF<sub>destino</sub> = UF<sub>origem</sub>) / N<sub>trajetórias com UF válida</sub> × 100</td></tr>
+    <tr><td><strong>Fontes</strong></td><td>PNP, CAPES e Plataforma Carolina Bori</td></tr>
   </tbody>
 </table>
 
 ## Indicadores desagregados
 
-Detalham a composição interna dos resultados identificados pelos indicadores centrais. Caracterizam como as trajetórias acadêmicas se distribuem segundo sexo, faixa etária, curso de origem, nível de formação, área do conhecimento, território ou características institucionais.
-
-> **Universo de referência.** As análises consideram exclusivamente os registros acadêmicos identificados nas bases administrativas e curriculares utilizadas, estando condicionadas à disponibilidade, atualização e consistência das informações registradas.
-
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center">Indicador</th>
-      <th style="width: 40%; text-align: center">Descrição</th>
-      <th style="width: 30%; text-align: center">Finalidade</th>
+      <th style="width: 26%; text-align: center">Aba</th>
+      <th style="width: 28%; text-align: center">Indicador</th>
+      <th style="width: 46%; text-align: center">Descrição</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Taxa de trajetórias por curso</td><td>Percentual de evadidos com continuidade acadêmica identificada em relação ao total na PNP, segmentado por curso de origem.</td><td>Comparar a continuidade entre cursos e identificar formações com maior prosseguimento.</td></tr>
-    <tr><td>Taxa de trajetórias por tipo de curso</td><td>Percentual de evadidos com continuidade segundo o nível ou modalidade do curso de origem.</td><td>Analisar diferenças de prosseguimento entre tipos de curso e níveis educacionais.</td></tr>
-    <tr><td>Taxa de trajetórias por turno</td><td>Percentual de evadidos com continuidade segundo o turno de realização do curso de origem.</td><td>Identificar variações associadas ao turno de oferta da formação inicial.</td></tr>
-    <tr><td>Taxa de trajetórias por status acadêmico</td><td>Percentual de evadidos com trajetória segundo a situação atual do novo vínculo — matriculado, titulado ou equivalente.</td><td>Acompanhar a condição atual da trajetória e identificar a proporção de evadidos que concluíram novas formações.</td></tr>
-    <tr><td>Distribuição dos tipos de trajetórias</td><td>Proporção de evadidos classificados segundo a direção do fluxo formativo — progressão vertical, horizontal ou reversão de nível.</td><td>Avaliar se a continuidade representa elevação de nível, permanência ou retorno a formação anterior.</td></tr>
-    <tr><td>Fluxo acadêmico</td><td>Percentual de evadidos com continuidade segundo o nível alcançado — graduação, mestrado, doutorado, mestrado/doutorado profissional.</td><td>Identificar os níveis educacionais mais acessados pelos evadidos que deram continuidade.</td></tr>
-    <tr><td>Distribuição das trajetórias por curso e grau acadêmico</td><td>Apresenta a distribuição das trajetórias acadêmicas dos evadidos segundo o curso de origem e o grau acadêmico alcançado na formação subsequente.</td><td>Comparar diferenças entre cursos, identificar perfis de progressão educacional e apoiar análises sobre mobilidade acadêmica dos evadidos da RFEPCT.</td></tr>
+    <tr><td>Visão Geral</td><td>Trajetórias acadêmicas por campus</td><td>Quantidade de trajetórias identificadas segundo campus de origem.</td></tr>
+    <tr><td>Visão Geral</td><td>Taxa de trajetória acadêmica por UF</td><td>Percentual de evadidos com trajetória identificada segundo UF, região ou instituição.</td></tr>
+    <tr><td>Trajetórias por curso</td><td>Taxa por curso</td><td>Percentual segundo o curso associado à evasão.</td></tr>
+    <tr><td>Trajetórias por curso</td><td>Taxa por tipo de curso</td><td>Percentual segundo o tipo de curso de origem.</td></tr>
+    <tr><td>Trajetórias por curso</td><td>Taxa por turno</td><td>Percentual segundo o turno do curso de origem.</td></tr>
+    <tr><td>Trajetórias por atributos</td><td>Taxa por sexo</td><td>Percentual segundo sexo.</td></tr>
+    <tr><td>Trajetórias por atributos</td><td>Taxa por faixa etária</td><td>Percentual segundo grupos etários.</td></tr>
+    <tr><td>Trajetórias por atributos</td><td>Taxa por cor ou raça</td><td>Percentual segundo cor ou raça.</td></tr>
+    <tr><td>Trajetórias por atributos</td><td>Taxa por ano de evasão</td><td>Percentual segundo o ano da evasão.</td></tr>
+    <tr><td>Dinâmica das trajetórias</td><td>Status da trajetória</td><td>Distribuição segundo os estados registrados nas bases utilizadas.</td></tr>
+    <tr><td>Dinâmica das trajetórias</td><td>Tipo de trajetória acadêmica</td><td>Classificação da relação entre o nível do curso de origem e o nível posteriormente identificado.</td></tr>
+    <tr><td>Dinâmica das trajetórias</td><td>Tipo de curso realizado</td><td>Distribuição segundo o tipo de formação posteriormente identificada.</td></tr>
+    <tr><td>Dinâmica das trajetórias</td><td>Fluxos acadêmicos</td><td>Distribuição das combinações entre origem e destino.</td></tr>
+    <tr><td>Destino das trajetórias</td><td>Trajetórias por curso e grau acadêmico</td><td>Distribuição segundo curso e grau acadêmico de destino.</td></tr>
   </tbody>
 </table>
 
-**Fontes consolidadas do módulo:** PNP 2017–2022 · CAPES · Plataforma Carolina Bori · INEP
+**Fontes:** PNP, CAPES e Plataforma Carolina Bori.
 
+## Limitações
+
+- A ausência de registro posterior não demonstra interrupção dos estudos.
+- O estudante pode ter ingressado em curso ou instituição não abrangidos pelas bases integradas ao módulo.
+- As coortes também possuem diferentes tempos disponíveis para acompanhamento. Evadidos de anos mais antigos possuem maior período para apresentar uma trajetória acadêmica posterior.

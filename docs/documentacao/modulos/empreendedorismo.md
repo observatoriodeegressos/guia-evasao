@@ -1,132 +1,126 @@
 ---
 layout: default
-title: "Módulo de Empreendedorismo"
+title: "Módulo 3 · Empreendedorismo"
 ---
-
-<!-- Parte de Navegação
-
-Veja qual é a o nome da próxima página e da anterior e adicione abaixo no formato:
-
--->
 
 # {{ page.title }}
 
-> **Vinculação societária formal dos evadidos.** Mensura a vinculação formal de evadidos da RFEPCT à criação de empresas e à participação societária registrada em bases administrativas, oferecendo leitura complementar à inserção ocupacional.
+> **Atividade empresarial formalizada.** O módulo representa empreendedorismo formal identificável administrativamente. Não cobre integralmente trabalho autônomo, atividade informal ou empreendimentos não registrados.
 
-## Escopo e leitura
+O módulo Empreendedorismo identifica a participação dos evadidos em atividades empresariais formalizadas nas bases administrativas utilizadas pela plataforma.
 
-O módulo mensura a vinculação formal de evadidos da RFEPCT à criação de empresas e à participação societária registrada em bases administrativas. Utiliza os evadidos como população de referência e os registros societários como evidência operacional de atividade empreendedora.
-
-O indicador não equivale à ocupação formal e não substitui os indicadores dos módulos de Empregabilidade e Salários. Um evadido pode empreender sem constar como empregado na RAIS, acumular vínculo empregatício e participação empresarial ou ainda estar vinculado a mais de uma empresa.
-
-O módulo permite analisar essa inserção por curso, perfil do evadido, território e características das empresas, e oferece leitura complementar da trajetória pós-formação.
-
-### Estrutura do módulo
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tbody>
-    <tr><td style="width: 30%"><strong>Indicadores centrais</strong></td><td>Total de empreendedores · Total de evadidos · Taxa de empreendedorismo · Empresas criadas · Capital social médio.</td></tr>
-    <tr><td><strong>Indicadores desagregados</strong></td><td>Empreendedorismo por UF · campus · curso · tipo de curso · turno · sexo · faixa etária · cor ou raça · ano de conclusão · região · atividade econômica · situação cadastral · porte.</td></tr>
-  </tbody>
-</table>
-
-> **Acumulação de inserções.** Um mesmo evadido pode ser simultaneamente ocupado (módulo de Empregabilidade) e empreendedor (módulo de Empreendedorismo). Os indicadores destes módulos devem ser lidos como dimensões complementares, não excludentes, da trajetória pós-formação.
-
-## Indicadores centrais
-
-### 01 · Total de empreendedores · *Quanto maior, melhor*
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica o total de evadidos identificados em quadros societários de empresas.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Valores mais elevados sugerem maior presença de evadidos em atividade empreendedora. A leitura deve considerar, simultaneamente, o total de evadidos da base analisada.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Total de empreendedores = ∑ (empreendedores)</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CNPJ · PNP 2017–2022</td></tr>
-  </tbody>
-</table>
-
-### 02 · Total de evadidos · *Quanto maior, melhor*
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Mensura o total de evadidos da RFEPCT no período de referência. Quando houver múltiplas formações associadas ao mesmo evadido, deve-se priorizar a formação de maior nível, evitando duplicidades.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Valores mais elevados indicam maior cobertura da RFEPCT e maior alcance institucional. Sua interpretação não deve ser associada, isoladamente, à qualidade dos resultados obtidos.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Total de evadidos = ∑ (evadidos)</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CNPJ · PNP 2017–2022</td></tr>
-  </tbody>
-</table>
-
-### 03 · Taxa de empreendedorismo · *Quanto maior, melhor*
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Mensura a proporção de evadidos identificados como empreendedores, considerando os filtros aplicados. É o indicador central do módulo: permite avaliar a incidência relativa de atividade empreendedora entre os evadidos.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, maior a incidência relativa de empreendedorismo entre os evadidos do recorte analisado. A interpretação deve considerar o total de evadidos, para evitar leituras distorcidas em recortes com baixo volume absoluto.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de empreendedorismo (%) = ( Empreendedores / Evadidos ) × 100</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CNPJ · PNP 2017–2022</td></tr>
-  </tbody>
-</table>
-
-### 04 · Empresas criadas · *Quanto maior, melhor*
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza o número de empresas com participação societária de evadidos da RFEPCT, incluindo matrizes e filiais, conforme os filtros aplicados.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, maior o volume empresarial formal identificado entre os evadidos.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Empresas criadas = Total de matrizes + Total de filiais</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CNPJ · PNP 2017–2022</td></tr>
-  </tbody>
-</table>
-
-### 05 · Capital social médio · *Quanto maior, melhor*
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza o capital social declarado pelas empresas associadas aos evadidos da RFEPCT, somando matrizes e filiais, conforme os filtros aplicados.</td></tr>
-    <tr><td><strong>Polaridade</strong></td><td>Quanto maior, maior o volume de capital social declarado pelas empresas associadas aos evadidos.</td></tr>
-    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Unidade · campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Capital social = ∑ capital social declarado das empresas associadas aos evadidos</td></tr>
-    <tr><td><strong>Fontes</strong></td><td>CNPJ · PNP 2017–2022</td></tr>
-  </tbody>
-</table>
-
-> **Notas de leitura.** O capital social declarado é uma medida cadastral, não necessariamente reflete o capital investido ou em circulação. Recomenda-se a leitura conjunta com o número de empresas criadas e a taxa de empreendedorismo para caracterizar o porte e a densidade do empreendedorismo no recorte analisado.
-
-## Indicadores desagregados
-
-Detalham a composição interna dos resultados identificados pelos indicadores centrais. Caracterizam como os empreendimentos se distribuem segundo sexo, faixa etária, curso, setor econômico, porte empresarial, natureza jurídica, território ou características institucionais.
-
-> **Universo de referência.** As análises consideram exclusivamente os evadidos identificados como sócios ou responsáveis por empresas formalmente registradas nas bases administrativas utilizadas.
+## Organização do módulo
 
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
     <tr>
-      <th style="width: 30%; text-align: center">Indicador</th>
-      <th style="width: 40%; text-align: center">Descrição</th>
-      <th style="width: 30%; text-align: center">Finalidade</th>
+      <th style="width: 32%; text-align: center">Aba</th>
+      <th style="width: 68%; text-align: center">Conteúdo</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Taxa de empreendedorismo por UF</td><td>Percentual de evadidos identificados como empreendedores formais em cada UF.</td><td>Identificar diferenças territoriais na atividade empreendedora.</td></tr>
-    <tr><td>Total de empreendedores por campus</td><td>Quantidade de evadidos identificados como sócios ou responsáveis por empresas em cada campus.</td><td>Comparar a participação empreendedora entre unidades institucionais.</td></tr>
-    <tr><td>Taxa de empreendedorismo por curso</td><td>Percentual de empreendedores segundo o curso concluído.</td><td>Analisar diferenças associadas às formações ofertadas.</td></tr>
-    <tr><td>Taxa de empreendedorismo por tipo de curso</td><td>Percentual de empreendedores segundo a tipologia da formação cursada.</td><td>Comparar padrões de empreendedorismo entre modalidades formativas.</td></tr>
-    <tr><td>Taxa de empreendedorismo por turno</td><td>Percentual de empreendedores segundo o turno de oferta do curso.</td><td>Identificar diferenças relacionadas à organização temporal da formação.</td></tr>
-    <tr><td>Taxa de empreendedorismo por sexo</td><td>Percentual de empreendedores segundo sexo.</td><td>Identificar desigualdades de participação entre homens e mulheres.</td></tr>
-    <tr><td>Taxa de empreendedorismo por faixa etária</td><td>Percentual de empreendedores segundo grupos etários.</td><td>Analisar diferenças ao longo do ciclo de vida laboral.</td></tr>
-    <tr><td>Taxa de empreendedorismo por cor ou raça</td><td>Percentual de empreendedores segundo categorias de cor ou raça.</td><td>Identificar desigualdades de participação entre grupos raciais.</td></tr>
-    <tr><td>Taxa de empreendedorismo por ano de conclusão</td><td>Percentual de empreendedores segundo o ano de conclusão do curso.</td><td>Acompanhar diferenças temporais entre coortes de evadidos.</td></tr>
-    <tr><td>Empresa e capital médio por UF</td><td>Quantidade média de empresas e valor médio de capital social das empresas vinculadas aos evadidos em cada UF.</td><td>Analisar a distribuição territorial da estrutura econômica dos empreendimentos.</td></tr>
-    <tr><td>Taxa de empreendedorismo por região</td><td>Percentual de empreendedores segundo grandes regiões geográficas.</td><td>Identificar diferenças regionais na atividade empreendedora.</td></tr>
-    <tr><td>Empresas por atividade econômica</td><td>Distribuição das empresas vinculadas aos evadidos segundo setores de atividade definidos pela CNAE.</td><td>Identificar os segmentos econômicos que concentram os empreendimentos.</td></tr>
-    <tr><td>Taxa de empreendedorismo por situação cadastral</td><td>Distribuição dos empreendedores segundo a situação cadastral das empresas registradas.</td><td>Avaliar padrões de permanência, encerramento ou regularidade dos empreendimentos.</td></tr>
-    <tr><td>Empresas por porte</td><td>Distribuição das empresas vinculadas aos evadidos segundo o porte empresarial.</td><td>Caracterizar a estrutura e dimensão econômica dos empreendimentos.</td></tr>
+    <tr><td><strong>Visão Geral</strong></td><td>Apresenta os principais indicadores de empreendedorismo formal.</td></tr>
+    <tr><td><strong>Empreendedorismo por curso</strong></td><td>Apresenta os resultados segundo características do curso associado à evasão.</td></tr>
+    <tr><td><strong>Empreendedorismo por atributos</strong></td><td>Apresenta os resultados segundo características sociodemográficas.</td></tr>
+    <tr><td><strong>Empresas Geral</strong></td><td>Apresenta informações sobre as empresas associadas aos evadidos.</td></tr>
+    <tr><td><strong>Tipologia das Empresas</strong></td><td>Caracteriza os empreendimentos segundo atividade econômica, situação cadastral e porte.</td></tr>
   </tbody>
 </table>
 
-**Fontes consolidadas do módulo:** IBGE — CNAE 2.3 · IBGE — DTB 2024 · CNPJ · PNP 2017–2022
+## Indicadores centrais
 
+### 01 · Total de empreendedores · *Descritivo*
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tbody>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos identificados em vínculos empresariais considerados elegíveis pelas regras da plataforma.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>empreendedores</sub> = ∑ I(Empreendedor<sub>i</sub> = 1)</td></tr>
+    <tr><td><strong>Fontes</strong></td><td>PNP e base CNPJ</td></tr>
+  </tbody>
+</table>
+
+### 02 · Total de evadidos · *Descritivo*
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tbody>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos elegíveis para o cálculo da taxa de empreendedorismo.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = ∑ Evadidos</td></tr>
+    <tr><td><strong>Fonte</strong></td><td>PNP</td></tr>
+  </tbody>
+</table>
+
+### 03 · Taxa de empreendedorismo · *Descritivo*
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tbody>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de evadidos identificados em vínculos empresariais formais.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de empreendedorismo (%) = N<sub>empreendedores</sub> / N<sub>evadidos</sub> × 100</td></tr>
+    <tr><td><strong>Fontes</strong></td><td>PNP e base CNPJ</td></tr>
+  </tbody>
+</table>
+
+### 04 · Empresas identificadas · *Descritivo*
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tbody>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os registros empresariais associados aos evadidos conforme as regras de vinculação adotadas no projeto.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Empresas = ∑ Empresas elegíveis</td></tr>
+    <tr><td><strong>Fontes</strong></td><td>PNP e base CNPJ</td></tr>
+  </tbody>
+</table>
+
+### 05 · Capital social · *Descritivo*
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tbody>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Apresenta o capital social declarado das empresas vinculadas aos evadidos.</td></tr>
+    <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
+    <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Capital social total = ∑ CapitalSocial<sub>j</sub></td></tr>
+    <tr><td><strong>Fontes</strong></td><td>PNP e base CNPJ</td></tr>
+  </tbody>
+</table>
+
+## Indicadores desagregados
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th style="width: 28%; text-align: center">Aba</th>
+      <th style="width: 28%; text-align: center">Indicador</th>
+      <th style="width: 44%; text-align: center">Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Visão Geral</td><td>Total de empreendedores por campus</td><td>Quantidade de evadidos identificados como empreendedores segundo campus.</td></tr>
+    <tr><td>Visão Geral</td><td>Taxa de empreendedorismo por UF</td><td>Percentual de empreendedores segundo UF, região ou instituição.</td></tr>
+    <tr><td>Empreendedorismo por curso</td><td>Taxa por curso</td><td>Percentual de empreendedores segundo o curso associado à evasão.</td></tr>
+    <tr><td>Empreendedorismo por curso</td><td>Taxa por tipo de curso</td><td>Percentual segundo a tipologia do curso.</td></tr>
+    <tr><td>Empreendedorismo por curso</td><td>Taxa por turno</td><td>Percentual segundo o turno do curso.</td></tr>
+    <tr><td>Empreendedorismo por atributos</td><td>Taxa por sexo</td><td>Percentual de empreendedores segundo sexo.</td></tr>
+    <tr><td>Empreendedorismo por atributos</td><td>Taxa por faixa etária</td><td>Percentual segundo grupos etários.</td></tr>
+    <tr><td>Empreendedorismo por atributos</td><td>Taxa por cor ou raça</td><td>Percentual segundo cor ou raça.</td></tr>
+    <tr><td>Empreendedorismo por atributos</td><td>Taxa por ano de evasão</td><td>Percentual segundo o ano da evasão.</td></tr>
+    <tr><td>Empresas Geral</td><td>Empresas por UF</td><td>Quantidade de empresas segundo localização.</td></tr>
+    <tr><td>Empresas Geral</td><td>Localização e capital social</td><td>Relaciona localização, quantidade de empresas e capital social.</td></tr>
+    <tr><td>Tipologia das Empresas</td><td>Empresas por atividade econômica</td><td>Distribuição segundo a CNAE.</td></tr>
+    <tr><td>Tipologia das Empresas</td><td>Empresas por situação cadastral</td><td>Distribuição segundo a situação cadastral.</td></tr>
+    <tr><td>Tipologia das Empresas</td><td>Empresas por porte</td><td>Distribuição segundo o porte empresarial.</td></tr>
+  </tbody>
+</table>
+
+**Fontes:** PNP, base CNPJ e CNAE.
+
+## Limitações
+
+- A ausência de vínculo empresarial não comprova ausência de atividade empreendedora.
+- O módulo não identifica integralmente atividades autônomas sem CNPJ, negócios informais, prestação eventual de serviços ou empreendimentos ainda não formalizados.
+- Os resultados representam empreendedorismo formal identificado nas bases utilizadas.
