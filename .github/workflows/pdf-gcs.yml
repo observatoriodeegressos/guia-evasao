@@ -35,7 +35,7 @@ jobs:
 
       - name: Generate merged PDF
         env:
-          SITE_BASE_URL: "https://alesmelo74.github.io/guiaobservatorio/"
+          SITE_BASE_URL: "https://observatoriodeegressos.github.io/guia-evasao/"
         run: python get_sites.py
 
       - name: Upload PDF as artifact
