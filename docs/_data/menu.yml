@@ -41,6 +41,9 @@ itens:
       - title: "Decisões metodológicas e seus vieses"
         href: "/documentacao/metodologia/decisoes_e_vieses"
         icon: "fas fa-balance-scale"
+      - title: "Termos utilizados"
+        href: "/documentacao/termos/termos"
+        icon: "fas fa-sort-alpha-down"
   - title: "Módulos da plataforma"
     icon: "fas fa-cubes"
     children:
