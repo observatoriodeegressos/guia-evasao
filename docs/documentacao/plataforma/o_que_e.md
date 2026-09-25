@@ -7,7 +7,7 @@ title: "O que é a PNP Evadidos"
 
 > **Plataforma de dados sobre trajetórias.** Identifica e acompanha estudantes que apresentaram situação de evasão em cursos da Rede Federal, usando os registros da PNP como ponto de partida para observar resultados em outras bases.
 
-A Plataforma PNP Evadidos é uma plataforma de dados voltada à identificação e ao acompanhamento das trajetórias de estudantes que apresentaram situação de evasão em cursos da Rede Federal de Educação Profissional, Científica e Tecnológica.
+> A **Plataforma PNP Evadidos** é uma plataforma de dados voltada à identificação e ao acompanhamento das trajetórias de estudantes que apresentaram situação de evasão em cursos da Rede Federal de Educação Profissional, Científica e Tecnológica.
 
 A Plataforma Nilo Peçanha constitui a referência para a identificação da trajetória educacional na Rede Federal. Na PNP, são considerados evadidos os estudantes cujas matrículas perderam o vínculo com a instituição antes da conclusão do curso. A classificação decorre das situações de matrícula registradas e validadas segundo as regras metodológicas da própria PNP.
 
