@@ -11,9 +11,9 @@ A Plataforma PNP Evadidos aplica regras distintas de deduplicação conforme a u
 
 ## Deduplicação por pessoa
 
-Quando uma mesma pessoa possui registros de evasão em múltiplos cursos no período analisado, ela é contabilizada apenas uma vez nos indicadores cuja unidade de análise é a pessoa.
+Quando uma mesma pessoa possui registros de evasão em múltiplos cursos no período analisado, ela é contabilizada apenas uma vez, por CPF, nos indicadores de empregabilidade, salários, empreendedorismo e produção científica. Nesses indicadores, o cruzamento com a RAIS, a Receita Federal e a Plataforma Lattes ocorre pelo CPF.
 
-Preserva-se o curso de maior nível de ensino. Em caso de empate, preserva-se o registro de evasão mais recente.
+Nesses indicadores, preserva-se o curso de maior nível de ensino para os recortes por curso. Em caso de empate, preserva-se o registro de evasão mais recente.
 
 ## Deduplicação por curso
 
@@ -21,7 +21,7 @@ Cada combinação curso-pessoa é contabilizada uma única vez.
 
 Essa regra permite que a mesma pessoa apareça em diferentes cursos quando possui registros de evasão em mais de um vínculo acadêmico.
 
-Aplica-se às análises e visualizações desagregadas por curso.
+Aplica-se à taxa de evasão e à trajetória acadêmica, que consideram o número de evasões e preservam as ocorrências em cursos distintos.
 
 ## Deduplicação por vínculo empregatício
 
@@ -31,9 +31,9 @@ Essa regra evita que uma pessoa com mais de um emprego formal seja contabilizada
 
 ## Deduplicação por trajetória acadêmica e produção científica
 
-Quando o evadido possui múltiplos registros de pós-graduação, considera-se o título de maior nível de acordo com a regra estabelecida para o respectivo indicador.
+Quando o evadido possui múltiplos registros de pós-graduação, considera-se o título de maior nível de acordo com a regra estabelecida para o respectivo indicador, sem eliminar as ocorrências de evasão em cursos distintos.
 
-Para produção científica, toda a produção elegível vinculada à pessoa é considerada.
+Para produção científica, cada pessoa é contabilizada uma única vez por CPF, e toda a produção elegível vinculada à pessoa é considerada.
 
 Os registros de produção são deduplicados por normalização do título, com remoção de acentos e pontuação e truncamento do texto a 100 caracteres, conforme as regras adotadas no processo de integração dos dados.
 
@@ -47,12 +47,12 @@ Os registros de produção são deduplicados por normalização do título, com 
     </tr>
   </thead>
   <tbody>
-    <tr><td><strong>Pessoa</strong></td><td>Uma ocorrência por pessoa. Preserva-se o curso de maior nível e, no empate, a evasão mais recente.</td></tr>
-    <tr><td><strong>Curso</strong></td><td>Uma ocorrência por par curso-pessoa. A mesma pessoa pode aparecer em cursos distintos.</td></tr>
+    <tr><td><strong>Pessoa</strong></td><td>Uma ocorrência por CPF nos indicadores de empregabilidade, salários, empreendedorismo e produção científica. Preserva-se o curso de maior nível e, no empate, a evasão mais recente.</td></tr>
+    <tr><td><strong>Curso</strong></td><td>Uma ocorrência por par curso-pessoa na taxa de evasão e na trajetória acadêmica. A mesma pessoa pode contribuir com evasões em cursos distintos.</td></tr>
     <tr><td><strong>Vínculo empregatício</strong></td><td>Preserva-se o vínculo de maior remuneração quando o indicador exige um único vínculo por pessoa.</td></tr>
-    <tr><td><strong>Trajetória acadêmica</strong></td><td>Considera-se o título de maior nível, conforme a regra do indicador.</td></tr>
-    <tr><td><strong>Produção científica</strong></td><td>Toda a produção elegível é considerada, com deduplicação por normalização do título.</td></tr>
+    <tr><td><strong>Trajetória acadêmica</strong></td><td>Preservam-se as ocorrências de evasão em cursos distintos. Para os registros de pós-graduação, considera-se o título de maior nível, conforme a regra do indicador.</td></tr>
+    <tr><td><strong>Produção científica</strong></td><td>Cada pessoa é contabilizada uma única vez por CPF. Toda a produção elegível é considerada, com deduplicação dos itens por normalização do título.</td></tr>
   </tbody>
 </table>
 
-> **As regras de deduplicação devem ser interpretadas em conjunto com a unidade de análise de cada indicador.** Uma pessoa pode contribuir uma única vez para um indicador populacional e aparecer em mais de uma categoria quando a análise considera vínculos acadêmicos distintos.
+> **As regras de deduplicação devem ser interpretadas em conjunto com a unidade de análise de cada indicador.** Uma pessoa pode contribuir uma única vez para os indicadores calculados por CPF e com mais de uma ocorrência para a taxa de evasão e a trajetória acadêmica.

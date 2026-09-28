@@ -15,33 +15,33 @@ Esse agrupamento reúne as situações de matrícula classificadas pela PNP como
 
 ## Unidade de observação
 
-A unidade inicial de observação corresponde ao vínculo entre uma pessoa e uma matrícula em determinado curso.
+A unidade de observação varia conforme o indicador. Para a taxa de evasão e a trajetória acadêmica, utiliza-se o número de evasões, conforme o conceito adotado pela PNP. Cada matrícula classificada como evadida representa uma evasão. Assim, uma pessoa pode contribuir com mais de uma evasão quando abandona cursos distintos.
 
-Essa distinção é necessária porque pessoa, matrícula, vínculo e curso representam unidades diferentes.
+Para os indicadores de empregabilidade, salários, empreendedorismo e produção científica, a unidade de observação é a pessoa, identificada pelo CPF. O cruzamento com a RAIS, a Receita Federal e a Plataforma Lattes ocorre por esse identificador. Por isso, a pessoa é contada uma única vez em cada indicador, mesmo que tenha evadido de mais de um curso.
 
-Uma mesma pessoa pode possuir mais de uma matrícula na Rede Federal. Também pode apresentar evasão em um curso e permanecer ou ingressar posteriormente em outro curso.
+Se Maria teve três matrículas e evadiu de dois cursos, o cálculo da taxa de evasão considera duas evasões entre três matrículas. A análise da trajetória acadêmica considera as duas evasões. Já os indicadores de empregabilidade, salários, empreendedorismo e produção científica consideram Maria uma única pessoa.
 
-> **Por esse motivo, a classificação de uma matrícula como evasão não significa, necessariamente, que a pessoa tenha interrompido toda a sua trajetória educacional.**
+> **Por esse motivo, a evasão em uma matrícula não significa, necessariamente, que a pessoa interrompeu sua trajetória educacional. Ela pode permanecer em outro curso ou ingressar posteriormente em uma nova formação**.
+
 
 ## Regra do curso de maior nível
 
-Quando uma mesma pessoa possui registros de evasão em mais de um curso no período analisado, contabiliza-se uma única ocorrência nos indicadores cuja unidade de análise é a pessoa.
+A regra do curso de maior nível aplica-se aos indicadores de empregabilidade, salários, empreendedorismo e produção científica. Nesses indicadores, a unidade de análise é a pessoa. Se ela evadiu de mais de um curso no período analisado, seu CPF é contabilizado uma única vez.
 
-Nesses casos, preserva-se o curso de maior nível de ensino. A hierarquia adotada é:
+Para associar essa pessoa a um curso nos recortes dos indicadores, seleciona-se o curso de maior nível entre aqueles com registro de evasão. Adota-se a seguinte hierarquia:
 
 > Doutorado > Mestrado > Mestrado Profissional > Especialização Lato Sensu > Especialização Técnica > Graduação > Médio/Técnico > FIC, Qualificação Profissional > Ensino Fundamental.
 
-Em caso de empate no nível de ensino, preserva-se o registro de evasão mais recente.
+Se houver mais de uma evasão no mesmo nível de ensino, seleciona-se o registro de evasão mais recente.
 
-Essa regra evita a dupla contagem de pessoas na apuração dos indicadores populacionais e mantém a vinculação da pessoa ao curso de maior nível entre aqueles em que houve registro de evasão.
+Essa seleção não se aplica à taxa de evasão nem à trajetória acadêmica. Nessas análises, cada matrícula evadida permanece como uma ocorrência. Assim, uma pessoa que evadiu de dois cursos contribui com duas evasões, mesmo que seja contada apenas uma vez nos indicadores por CPF.
 
-> **Atenção à leitura.** A aplicação dessa regra não significa que o estudante tenha concluído ou adquirido a qualificação correspondente ao nível selecionado. O nível representa exclusivamente a classificação do curso associado ao registro de evasão utilizado na análise.
+> **Atenção à leitura.** O nível selecionado identifica o curso usado para classificar a pessoa nos recortes dos indicadores. Ele não indica conclusão do curso nem permite atribuir ao curso o resultado observado nas bases externas.
+
 
 ## Critérios de exclusão e estrutura da base
 
-Registros sem data de nascimento válida ou sem CPF são descartados do universo utilizado para o pareamento entre bases.
-
-A base intermediária de evadidos, gerada a partir da PNP, preserva múltiplos registros por pessoa, com um registro para cada vínculo curso-pessoa identificado.
+Registros sem CPF ou com data de nascimento inválida são excluídos da base analítica. Eles não entram no pareamento com bases externas nem no numerador ou denominador da taxa de evasão.
 
 A deduplicação por pessoa ocorre apenas nas etapas em que o indicador utiliza a pessoa como unidade de análise.
 
