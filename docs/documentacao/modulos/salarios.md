@@ -9,6 +9,10 @@ title: "Módulo 2 · Salários"
 
 O módulo Salários analisa a remuneração dos evadidos que possuem vínculo formal identificado na RAIS e informação salarial elegível para o cálculo.
 
+Cada pessoa é contabilizada uma única vez por CPF, independentemente da quantidade de cursos em que evadiu. Nos recortes por curso, preserva-se o curso de maior nível entre aqueles com registro de evasão. Em caso de empate, preserva-se o registro de evasão mais recente.
+
+Quando há múltiplos vínculos formais, preserva-se o vínculo de maior remuneração para os indicadores que exigem um único vínculo representativo por pessoa.
+
 ## Organização do módulo
 
 <table border="1" cellspacing="0" cellpadding="5">
@@ -50,10 +54,10 @@ O painel disponibiliza três formas de apresentação da distribuição salarial
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Corresponde à soma das remunerações consideradas válidas para os evadidos ocupados.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Corresponde à soma das remunerações consideradas válidas para os evadidos ocupados, após deduplicação por CPF e seleção do vínculo representativo.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Massa salarial = ∑ S<sub>i</sub><br><em>S<sub>i</sub></em>: valor remuneratório considerado para a observação <em>i</em>.</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Massa salarial = ∑ S<sub>i</sub><br><em>S<sub>i</sub></em>: remuneração válida do vínculo selecionado para a pessoa <em>i</em>, identificada pelo CPF.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP e RAIS</td></tr>
   </tbody>
 </table>
@@ -65,7 +69,7 @@ O painel disponibiliza três formas de apresentação da distribuição salarial
     <tr><td style="width: 25%"><strong>Definição</strong></td><td>Apresenta a remuneração dos evadidos ocupados segundo a medida selecionada no painel.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Média aritmética: S̄ = ∑ S<sub>i</sub> / N<br>Média logarítmica: ln(S)‾ = ∑ ln(S<sub>i</sub>) / N<br>Mediana: Mediana(S) = P50</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Média aritmética: S̄ = ∑ S<sub>i</sub> / N<br>Média logarítmica: ln(S)‾ = ∑ ln(S<sub>i</sub>) / N<br>Mediana: Mediana(S) = P50<br><em>i</em>: pessoa única, identificada pelo CPF.<br><em>N</em>: número de pessoas com remuneração elegível para a medida, após deduplicação por CPF e seleção do vínculo representativo.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP e RAIS</td></tr>
   </tbody>
 </table>

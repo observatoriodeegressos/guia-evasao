@@ -11,6 +11,10 @@ O módulo Empregabilidade identifica a inserção dos evadidos no mercado de tra
 
 A identificação de um evadido na RAIS indica a existência de vínculo formal no período analisado.
 
+Cada pessoa é contabilizada uma única vez por CPF, independentemente da quantidade de cursos em que evadiu ou de vínculos formais identificados. Nos recortes por curso, preserva-se o curso de maior nível entre aqueles com registro de evasão. Em caso de empate, preserva-se o registro de evasão mais recente.
+
+Quando há múltiplos vínculos formais, preserva-se o vínculo de maior remuneração para os indicadores que exigem um único vínculo representativo por pessoa.
+
 > **A ausência de registro não deve ser interpretada automaticamente como desemprego.** O evadido pode exercer trabalho informal, atividade autônoma, atividade empresarial ou outra forma de trabalho não captada pela RAIS.
 
 ## Organização do módulo
@@ -36,10 +40,10 @@ A identificação de um evadido na RAIS indica a existência de vínculo formal 
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos para os quais foi identificado vínculo formal de trabalho na RAIS.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as pessoas distintas, identificadas pelo CPF, para as quais foi identificado vínculo formal de trabalho na RAIS.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>ocupados</sub> = ∑ I(Ocupado<sub>i</sub> = 1)</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>ocupados</sub> = ∑ I(Ocupado<sub>i</sub> = 1)<br><em>i</em>: pessoa única, identificada pelo CPF.</td></tr>
     <tr><td><strong>Fonte</strong></td><td>PNP e RAIS</td></tr>
   </tbody>
 </table>
@@ -48,10 +52,10 @@ A identificação de um evadido na RAIS indica a existência de vínculo formal 
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos elegíveis para o módulo de Empregabilidade, conforme as regras de identificação e deduplicação utilizadas pela plataforma.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos elegíveis para o módulo de Empregabilidade, uma única vez por CPF, conforme as regras de identificação utilizadas pela plataforma.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = ∑ Evadidos</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = Número de CPFs distintos elegíveis</td></tr>
     <tr><td><strong>Fonte</strong></td><td>PNP</td></tr>
   </tbody>
 </table>
@@ -60,7 +64,7 @@ A identificação de um evadido na RAIS indica a existência de vínculo formal 
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de evadidos com vínculo formal identificado na RAIS em relação ao total de evadidos elegíveis.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de evadidos com vínculo formal identificado na RAIS em relação ao total de evadidos elegíveis, considerando pessoas distintas no numerador e no denominador.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Quanto maior, melhor.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Taxa de ocupação (%) = N<sub>ocupados</sub> / N<sub>evadidos</sub> × 100</td></tr>

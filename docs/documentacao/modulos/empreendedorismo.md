@@ -9,6 +9,10 @@ title: "Módulo 3 · Empreendedorismo"
 
 O módulo Empreendedorismo identifica a participação dos evadidos em atividades empresariais formalizadas nas bases administrativas utilizadas pela plataforma.
 
+Na contagem de evadidos, cada pessoa é contabilizada uma única vez por CPF, independentemente da quantidade de cursos em que evadiu ou de vínculos empresariais identificados. Nos recortes por curso, preserva-se o curso de maior nível entre aqueles com registro de evasão. Em caso de empate, preserva-se o registro de evasão mais recente.
+
+A deduplicação por CPF se aplica à contagem de pessoas. Os indicadores de empresas e de capital social consideram os registros empresariais elegíveis.
+
 ## Organização do módulo
 
 <table border="1" cellspacing="0" cellpadding="5">
@@ -33,10 +37,10 @@ O módulo Empreendedorismo identifica a participação dos evadidos em atividade
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos identificados em vínculos empresariais considerados elegíveis pelas regras da plataforma.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as pessoas distintas, identificadas pelo CPF, com vínculos empresariais considerados elegíveis pelas regras da plataforma.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>empreendedores</sub> = ∑ I(Empreendedor<sub>i</sub> = 1)</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>empreendedores</sub> = ∑ I(Empreendedor<sub>i</sub> = 1)<br><em>i</em>: pessoa única, identificada pelo CPF.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP e base CNPJ</td></tr>
   </tbody>
 </table>
@@ -45,10 +49,10 @@ O módulo Empreendedorismo identifica a participação dos evadidos em atividade
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos elegíveis para o cálculo da taxa de empreendedorismo.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos elegíveis para o cálculo da taxa de empreendedorismo, uma única vez por CPF.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = ∑ Evadidos</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = Número de CPFs distintos elegíveis</td></tr>
     <tr><td><strong>Fonte</strong></td><td>PNP</td></tr>
   </tbody>
 </table>
@@ -57,7 +61,7 @@ O módulo Empreendedorismo identifica a participação dos evadidos em atividade
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de evadidos identificados em vínculos empresariais formais.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de evadidos identificados em vínculos empresariais formais, considerando pessoas distintas no numerador e no denominador.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Taxa de empreendedorismo (%) = N<sub>empreendedores</sub> / N<sub>evadidos</sub> × 100</td></tr>

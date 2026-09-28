@@ -9,6 +9,10 @@ title: "Módulo 5 · Produção Científica"
 
 O módulo Produção Científica identifica atividades técnico-científicas dos evadidos a partir das informações registradas nos Currículos Lattes identificados pela plataforma.
 
+Na contagem de evadidos, cada pessoa é contabilizada uma única vez por CPF, independentemente da quantidade de cursos em que evadiu ou de produções identificadas. Nos recortes por curso, preserva-se o curso de maior nível entre aqueles com registro de evasão. Em caso de empate, preserva-se o registro de evasão mais recente.
+
+A contagem de produções considera todos os itens elegíveis, após a deduplicação dos registros de produção. A existência de várias produções não aumenta a contagem de pessoas.
+
 ## Organização do módulo
 
 <table border="1" cellspacing="0" cellpadding="5">
@@ -32,10 +36,10 @@ O módulo Produção Científica identifica atividades técnico-científicas dos
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos para os quais foi identificado Currículo Lattes.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as pessoas distintas, identificadas pelo CPF, para as quais foi identificado Currículo Lattes.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>Lattes</sub> = ∑ I(Lattes<sub>i</sub> = 1)</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>Lattes</sub> = ∑ I(Lattes<sub>i</sub> = 1)<br><em>i</em>: pessoa única, identificada pelo CPF.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP e Plataforma Lattes</td></tr>
   </tbody>
 </table>
@@ -44,10 +48,10 @@ O módulo Produção Científica identifica atividades técnico-científicas dos
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos elegíveis para o módulo após aplicação das regras de deduplicação.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos elegíveis para o módulo, uma única vez por CPF.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = ∑ Evadidos</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = Número de CPFs distintos elegíveis</td></tr>
     <tr><td><strong>Fonte</strong></td><td>PNP</td></tr>
   </tbody>
 </table>
@@ -56,7 +60,7 @@ O módulo Produção Científica identifica atividades técnico-científicas dos
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de evadidos para os quais foi identificado Currículo Lattes.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de evadidos para os quais foi identificado Currículo Lattes, considerando pessoas distintas no numerador e no denominador.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Taxa Lattes (%) = N<sub>evadidos com Lattes</sub> / N<sub>evadidos</sub> × 100</td></tr>
@@ -68,7 +72,7 @@ O módulo Produção Científica identifica atividades técnico-científicas dos
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as produções registradas nos Currículos Lattes identificados e classificadas segundo as categorias utilizadas pela plataforma. As produções são agrupadas em produção bibliográfica, produção técnica e propriedade intelectual.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as produções elegíveis registradas nos Currículos Lattes identificados, após deduplicação por normalização do título, com remoção de acentos e pontuação e truncamento a 100 caracteres. As produções são agrupadas em produção bibliográfica, produção técnica e propriedade intelectual.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Total de produções = ∑ P<sub>bibliográfica</sub> + ∑ P<sub>técnica</sub> + ∑ P<sub>propriedade intelectual</sub></td></tr>
@@ -80,10 +84,10 @@ O módulo Produção Científica identifica atividades técnico-científicas dos
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos que possuem pelo menos uma produção elegível registrada no Currículo Lattes.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as pessoas distintas, identificadas pelo CPF, que possuem pelo menos uma produção elegível registrada no Currículo Lattes.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos com produção</sub> = ∑ I(Produção<sub>i</sub> ≥ 1)</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos com produção</sub> = ∑ I(Produção<sub>i</sub> ≥ 1)<br><em>i</em>: pessoa única, identificada pelo CPF.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP e Plataforma Lattes</td></tr>
   </tbody>
 </table>
@@ -92,7 +96,7 @@ O módulo Produção Científica identifica atividades técnico-científicas dos
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica o número médio de produções entre os evadidos que possuem pelo menos uma produção registrada.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica o número médio de produções elegíveis, após deduplicação dos itens, entre os evadidos que possuem pelo menos uma produção registrada. O denominador considera cada CPF uma única vez.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Média de produção = Total de produções / N<sub>evadidos com produção</sub></td></tr>

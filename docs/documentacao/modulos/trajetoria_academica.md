@@ -9,6 +9,10 @@ title: "Módulo 4 · Trajetória Acadêmica"
 
 O módulo Trajetória Acadêmica identifica registros de continuidade da formação educacional dos evadidos após a evasão observada na Rede Federal.
 
+A unidade de análise é a ocorrência de evasão, com uma por par curso-pessoa. Uma pessoa pode contribuir com ocorrências em cursos distintos. Não se aplica a deduplicação por CPF nem a seleção de um único curso evadido de maior nível.
+
+Quando há múltiplos registros de pós-graduação, considera-se o título de maior nível, conforme a regra do respectivo indicador, preservando as ocorrências de evasão em cursos distintos.
+
 As fontes integradas ao módulo permitem identificar determinados registros de pós-graduação *stricto sensu* realizados no Brasil e informações relacionadas a diplomas obtidos no exterior submetidos aos processos de reconhecimento registrados na Plataforma Carolina Bori.
 
 ## Organização do módulo
@@ -35,10 +39,10 @@ As fontes integradas ao módulo permitem identificar determinados registros de p
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os evadidos para os quais foi identificado pelo menos um registro acadêmico elegível nas bases utilizadas pelo módulo.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as ocorrências de evasão, com uma por par curso-pessoa, às quais se associa pelo menos um registro acadêmico elegível nas bases utilizadas pelo módulo.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>trajetória</sub> = ∑ I(Trajetória<sub>i</sub> = 1)</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>trajetória</sub> = ∑ I(Trajetória<sub>i</sub> = 1)<br><em>i</em>: ocorrência de evasão por par curso-pessoa.<br><em>I(Trajetória<sub>i</sub> = 1)</em>: indica a existência de pelo menos um registro acadêmico elegível associado à ocorrência.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP, CAPES e Plataforma Carolina Bori</td></tr>
   </tbody>
 </table>
@@ -47,10 +51,10 @@ As fontes integradas ao módulo permitem identificar determinados registros de p
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>O total de evadidos contabiliza pessoas únicas após aplicação das regras de identificação e deduplicação.<br>O total de registros de evasão contabiliza as ocorrências de evasão consideradas elegíveis. Uma pessoa pode possuir mais de um registro.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Neste módulo, o total de evadidos corresponde ao total de registros de evasão elegíveis, com uma ocorrência por par curso-pessoa. Uma pessoa pode contribuir com mais de uma ocorrência quando possui evasões em cursos distintos.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Total de evadidos = ∑ Pessoas únicas<br>Total de registros de evasão = ∑ Registros elegíveis</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Total de evadidos = Total de registros de evasão = Número de pares curso-pessoa com evasão elegível</td></tr>
     <tr><td><strong>Fonte</strong></td><td>PNP</td></tr>
   </tbody>
 </table>
@@ -59,10 +63,10 @@ As fontes integradas ao módulo permitem identificar determinados registros de p
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Representa a combinação entre o tipo ou nível do curso associado à evasão e o tipo ou nível da formação posteriormente identificada.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Representa a combinação entre o tipo ou nível do curso associado a cada ocorrência de evasão e o tipo ou nível da formação posteriormente identificada, preservando uma ocorrência por par curso-pessoa.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Fluxo<sub>origem → destino</sub> = ∑ Trajetórias<sub>origem → destino</sub></td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Fluxo<sub>origem → destino</sub> = ∑ Trajetórias<sub>origem → destino</sub><br>Cada trajetória contabilizada corresponde a uma ocorrência de evasão por par curso-pessoa com destino elegível identificado.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP, CAPES e Plataforma Carolina Bori</td></tr>
   </tbody>
 </table>
@@ -71,9 +75,9 @@ As fontes integradas ao módulo permitem identificar determinados registros de p
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Apresenta a distribuição territorial dos evadidos que possuem trajetória acadêmica posteriormente identificada.<br>A UF de origem corresponde à UF associada ao curso no qual ocorreu a evasão.<br>A UF de destino corresponde à localização da formação posteriormente identificada.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Apresenta a distribuição territorial das ocorrências de evasão, uma por par curso-pessoa, com trajetória acadêmica posteriormente identificada.<br>A UF de origem corresponde à UF associada ao curso no qual ocorreu a evasão.<br>A UF de destino corresponde à localização da formação posteriormente identificada.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de movimentação = N(UF<sub>destino</sub> ≠ UF<sub>origem</sub>) / N<sub>trajetórias com UF válida</sub> × 100<br>Taxa de permanência = N(UF<sub>destino</sub> = UF<sub>origem</sub>) / N<sub>trajetórias com UF válida</sub> × 100</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de movimentação = N(UF<sub>destino</sub> ≠ UF<sub>origem</sub>) / N<sub>trajetórias com UF válida</sub> × 100<br>Taxa de permanência = N(UF<sub>destino</sub> = UF<sub>origem</sub>) / N<sub>trajetórias com UF válida</sub> × 100<br>As contagens consideram ocorrências de evasão por par curso-pessoa, com trajetória identificada e UFs de origem e destino válidas.</td></tr>
     <tr><td><strong>Fontes</strong></td><td>PNP, CAPES e Plataforma Carolina Bori</td></tr>
   </tbody>
 </table>
@@ -89,8 +93,8 @@ As fontes integradas ao módulo permitem identificar determinados registros de p
     </tr>
   </thead>
   <tbody>
-    <tr><td>Visão Geral</td><td>Trajetórias acadêmicas por campus</td><td>Quantidade de trajetórias identificadas segundo campus de origem.</td></tr>
-    <tr><td>Visão Geral</td><td>Taxa de trajetória acadêmica por UF</td><td>Percentual de evadidos com trajetória identificada segundo UF, região ou instituição.</td></tr>
+    <tr><td>Visão Geral</td><td>Trajetórias acadêmicas por campus</td><td>Quantidade de ocorrências de evasão com trajetória identificada, por par curso-pessoa, segundo campus de origem.</td></tr>
+    <tr><td>Visão Geral</td><td>Taxa de trajetória acadêmica por UF</td><td>Percentual de ocorrências de evasão com trajetória identificada, calculado por par curso-pessoa, segundo UF, região ou instituição.</td></tr>
     <tr><td>Trajetórias por curso</td><td>Taxa por curso</td><td>Percentual segundo o curso associado à evasão.</td></tr>
     <tr><td>Trajetórias por curso</td><td>Taxa por tipo de curso</td><td>Percentual segundo o tipo de curso de origem.</td></tr>
     <tr><td>Trajetórias por curso</td><td>Taxa por turno</td><td>Percentual segundo o turno do curso de origem.</td></tr>

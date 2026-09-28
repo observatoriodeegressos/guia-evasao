@@ -9,6 +9,8 @@ title: "Aba Evasão"
 
 A aba Evasão apresenta a população de origem da Plataforma PNP Evadidos.
 
+A contagem de evasões considera uma ocorrência por par curso-pessoa, preservando as evasões em cursos distintos. Nessa contagem, não se aplica a deduplicação por CPF nem a seleção do curso de maior nível. O total de matriculados corresponde às matrículas elegíveis utilizadas como população de referência.
+
 ## Organização da aba
 
 A aba está organizada em quatro subabas:
@@ -34,7 +36,7 @@ A aba está organizada em quatro subabas:
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as matrículas que compõem a população utilizada como referência para os indicadores da aba Evasão.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza as matrículas elegíveis que compõem a população utilizada como referência para os indicadores da aba Evasão, sem reduzi-las a pessoas únicas por CPF.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Curso</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>N<sub>matriculados</sub> = ∑ Matrículas</td></tr>
@@ -46,11 +48,11 @@ A aba está organizada em quatro subabas:
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os registros classificados como evasão entre as matrículas pertencentes à população analisada.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Contabiliza os registros classificados como evasão entre as matrículas pertencentes à população analisada, com uma ocorrência por par curso-pessoa.</td></tr>
     <tr><td><strong>Observação</strong></td><td>O indicador representa registros de evasão. Não se deve pressupor que cada ocorrência corresponda necessariamente a uma pessoa distinta.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Curso</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = ∑ I(Evasão<sub>i</sub> = 1)<br><em>I(Evasão<sub>i</sub> = 1)</em>: identifica as matrículas classificadas como evasão segundo os critérios adotados pela plataforma.</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>N<sub>evadidos</sub> = ∑ I(Evasão<sub>i</sub> = 1)<br><em>i</em>: par curso-pessoa.<br><em>I(Evasão<sub>i</sub> = 1)</em>: indica a existência de registro de evasão elegível para esse par, contabilizado uma única vez.</td></tr>
     <tr><td><strong>Fonte</strong></td><td>Plataforma Nilo Peçanha</td></tr>
   </tbody>
 </table>
@@ -62,7 +64,7 @@ A aba está organizada em quatro subabas:
     <tr><td style="width: 25%"><strong>Definição</strong></td><td>Indica a proporção de registros classificados como evasão em relação à população de matrículas considerada no cálculo.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Quanto menor, melhor.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Curso</td></tr>
-    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de evasão (%) = N<sub>evadidos</sub> / N<sub>matriculados</sub> × 100<br><em>N<sub>evadidos</sub></em>: número de registros classificados como evasão.<br><em>N<sub>matriculados</sub></em>: número de matrículas utilizadas como população de referência.</td></tr>
+    <tr><td><strong>Modelo matemático</strong></td><td>Taxa de evasão (%) = N<sub>evadidos</sub> / N<sub>matriculados</sub> × 100<br><em>N<sub>evadidos</sub></em>: número de ocorrências de evasão, com uma por par curso-pessoa.<br><em>N<sub>matriculados</sub></em>: número de matrículas utilizadas como população de referência.</td></tr>
     <tr><td><strong>Fonte</strong></td><td>Plataforma Nilo Peçanha</td></tr>
   </tbody>
 </table>
@@ -95,9 +97,7 @@ A aba está organizada em quatro subabas:
 
 ## Interpretação
 
-O total de evadidos mede volume. A taxa de evasão mede a ocorrência relativa à população utilizada como referência. Os dois indicadores devem ser analisados conjuntamente.
-
-Um campus pode apresentar grande número de registros de evasão por possuir maior quantidade de matrículas. Outro campus pode possuir menor número absoluto de evasões e, simultaneamente, apresentar uma taxa proporcionalmente mais elevada.
+O total de evadidos mede o volume de ocorrências de evasão, com uma por par curso-pessoa. A taxa de evasão mede a ocorrência relativa à população utilizada como referência. Os dois indicadores devem ser analisados conjuntamente.
 
 > **As comparações entre atributos são descritivas.** Uma diferença entre homens e mulheres, grupos etários ou categorias de cor ou raça não demonstra que essas características causem a evasão.
 

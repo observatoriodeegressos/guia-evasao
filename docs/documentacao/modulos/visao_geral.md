@@ -13,6 +13,10 @@ A aba Evasão constitui o ponto de partida da plataforma. Ela apresenta a popula
 
 Os demais módulos utilizam essa população como referência para identificar resultados registrados em outras bases administrativas. A plataforma acompanha cinco dimensões: Empregabilidade, Salários, Empreendedorismo, Trajetória Acadêmica e Produção Científica.
 
+Na aba Evasão e no módulo Trajetória Acadêmica, a contagem de evadidos considera ocorrências de evasão, com uma por par curso-pessoa, preservando os cursos distintos da mesma pessoa. Nos módulos Empregabilidade, Salários, Empreendedorismo e Produção Científica, a contagem de evadidos considera uma única pessoa por CPF.
+
+Nos recortes por curso dos indicadores calculados por pessoa, seleciona-se o curso evadido de maior nível e, em caso de empate, o registro de evasão mais recente. As contagens de matrículas, empresas e produções científicas mantêm suas unidades próprias e não se confundem com a contagem de pessoas.
+
 > **A existência de um registro de evasão em determinada matrícula não significa que a pessoa tenha interrompido definitivamente sua trajetória educacional.** Uma pessoa pode possuir mais de uma matrícula, abandonar determinado curso, permanecer vinculada a outro ou retornar posteriormente à educação formal.
 
 ## Duas categorias de indicadores
