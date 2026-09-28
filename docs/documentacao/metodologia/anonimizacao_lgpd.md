@@ -11,7 +11,7 @@ A Plataforma PNP Evadidos adota medidas de proteção de dados pessoais destinad
 
 ## Pareamento com validação de consistência
 
-O cruzamento entre a PNP e as demais bases é realizado por chave de identificação individual, utilizando o CPF, em ambiente de processamento seguro e com acesso restrito.
+O cruzamento entre a PNP e as demais bases é realizado por chave de identificação individual, utilizando o CPF, em ambiente de processamento seguro e com acesso restrito. O uso do CPF como chave de pareamento não altera a unidade de análise de cada indicador.
 
 O identificador pessoal utilizado para o pareamento não integra os dados disponibilizados ao usuário final.
 
@@ -33,12 +33,14 @@ A separação entre a camada de identificação utilizada no processo de integra
 
 Quando determinado cruzamento resulta em frequência inferior ao limiar mínimo definido para divulgação, com **n < 5**, o valor é suprimido ou agregado em categoria residual.
 
+Para aplicar esse limiar, n deve representar o número de pessoas distintas, independentemente da quantidade de evasões ou de outros registros associados.
+
 Essa regra reduz o risco de identificação indireta de indivíduos a partir da combinação de características pouco frequentes.
 
 ## Limitação de cruzamentos sensíveis
 
 A plataforma restringe combinações de filtros capazes de produzir grupos com número reduzido de indivíduos.
 
-Assim, cruzamentos simultâneos envolvendo características como instituição, campus, curso, raça ou cor, faixa etária e renda podem ter sua granularidade limitada quando resultarem em denominadores pequenos.
+Assim, cruzamentos simultâneos envolvendo características como instituição, campus, curso, raça ou cor, faixa etária e renda podem ter sua granularidade limitada quando resultarem em grupos com poucas pessoas distintas, mesmo que esses grupos apresentem várias ocorrências de evasão.
 
 > **Essas medidas buscam conciliar a utilidade analítica dos indicadores com a proteção dos dados pessoais** utilizados no processo de integração das bases.

@@ -5,7 +5,7 @@ title: "Deduplicação"
 
 # {{ page.title }}
 
-> **Regras distintas conforme a unidade de análise.** Por esse motivo, o total de evadidos apresentado pode variar entre módulos, indicadores e níveis de desagregação.
+> **Regras distintas conforme a unidade de análise.** Por esse motivo, os totais apresentados podem representar evasões ou pessoas, conforme o módulo e o indicador.
 
 A Plataforma PNP Evadidos aplica regras distintas de deduplicação conforme a unidade de análise e a finalidade de cada indicador.
 
@@ -13,11 +13,11 @@ A Plataforma PNP Evadidos aplica regras distintas de deduplicação conforme a u
 
 Quando uma mesma pessoa possui registros de evasão em múltiplos cursos no período analisado, ela é contabilizada apenas uma vez, por CPF, nos indicadores de empregabilidade, salários, empreendedorismo e produção científica. Nesses indicadores, o cruzamento com a RAIS, a Receita Federal e a Plataforma Lattes ocorre pelo CPF.
 
-Nesses indicadores, preserva-se o curso de maior nível de ensino para os recortes por curso. Em caso de empate, preserva-se o registro de evasão mais recente.
+Nesses indicadores, preserva-se o curso de maior nível de ensino entre aqueles com registro de evasão para os recortes por curso. Em caso de empate, preserva-se o registro de evasão mais recente.
 
 ## Deduplicação por curso
 
-Cada combinação curso-pessoa é contabilizada uma única vez.
+Cada combinação curso-pessoa com registro de evasão é contabilizada uma única vez.
 
 Essa regra permite que a mesma pessoa apareça em diferentes cursos quando possui registros de evasão em mais de um vínculo acadêmico.
 
@@ -47,7 +47,7 @@ Os registros de produção são deduplicados por normalização do título, com 
     </tr>
   </thead>
   <tbody>
-    <tr><td><strong>Pessoa</strong></td><td>Uma ocorrência por CPF nos indicadores de empregabilidade, salários, empreendedorismo e produção científica. Preserva-se o curso de maior nível e, no empate, a evasão mais recente.</td></tr>
+    <tr><td><strong>Pessoa</strong></td><td>Uma pessoa por CPF nos indicadores de empregabilidade, salários, empreendedorismo e produção científica. Preserva-se o curso de maior nível e, no empate, a evasão mais recente.</td></tr>
     <tr><td><strong>Curso</strong></td><td>Uma ocorrência por par curso-pessoa na taxa de evasão e na trajetória acadêmica. A mesma pessoa pode contribuir com evasões em cursos distintos.</td></tr>
     <tr><td><strong>Vínculo empregatício</strong></td><td>Preserva-se o vínculo de maior remuneração quando o indicador exige um único vínculo por pessoa.</td></tr>
     <tr><td><strong>Trajetória acadêmica</strong></td><td>Preservam-se as ocorrências de evasão em cursos distintos. Para os registros de pós-graduação, considera-se o título de maior nível, conforme a regra do indicador.</td></tr>

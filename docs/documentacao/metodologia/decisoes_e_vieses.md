@@ -25,15 +25,21 @@ title: "Decisões metodológicas e seus vieses"
     </tr>
     <tr>
       <td><strong>Curso de maior nível</strong></td>
-      <td>Quando uma mesma pessoa possui registros de evasão em mais de um curso, preserva-se o curso de maior nível nos indicadores cuja unidade de análise é a pessoa.</td>
+      <td>Quando uma mesma pessoa possui registros de evasão em mais de um curso, preserva-se o curso de maior nível nos indicadores de empregabilidade, salários, empreendedorismo e produção científica. Em caso de empate, preserva-se a evasão mais recente.</td>
       <td>Evita a contagem múltipla da mesma pessoa e estabelece uma regra única e reproduzível para definir o vínculo acadêmico representativo.</td>
-      <td>A regra reduz a participação dos cursos de menor nível nas estatísticas agregadas. Por exemplo, uma pessoa com evasão registrada em um curso técnico e posteriormente em uma graduação será associada à graduação na visão por pessoa. Isso não significa que tenha concluído qualquer desses níveis.</td>
+      <td>A regra reduz a participação dos cursos de menor nível nos recortes por curso dos indicadores calculados por pessoa. O curso selecionado não indica conclusão nem qualificação obtida. Essa seleção não se aplica à taxa de evasão nem à trajetória acadêmica.</td>
     </tr>
     <tr>
       <td><strong>Deduplicação por pessoa</strong></td>
-      <td>Cada pessoa é contabilizada uma única vez nos indicadores populacionais, independentemente da quantidade de registros de evasão existentes.</td>
-      <td>Indicadores populacionais exigem denominadores compostos por indivíduos únicos. Sem deduplicação, pessoas com múltiplos vínculos acadêmicos teriam maior peso no cálculo.</td>
-      <td>Os totais da visão geral não correspondem necessariamente à soma das categorias apresentadas em análises por curso. Indicadores calculados por pessoa e indicadores calculados por vínculo curso-pessoa possuem unidades de análise diferentes e não devem ser comparados diretamente sem considerar essa distinção.</td>
+      <td>Cada pessoa é contabilizada uma única vez, por CPF, nos indicadores de empregabilidade, salários, empreendedorismo e produção científica, independentemente da quantidade de registros de evasão existentes.</td>
+      <td>Nesses indicadores, a população elegível é composta por pessoas únicas. Sem deduplicação, pessoas com múltiplos vínculos acadêmicos teriam maior peso no cálculo.</td>
+      <td>Os totais de pessoas podem diferir dos totais de evasões utilizados na taxa de evasão e na trajetória acadêmica. Esses indicadores possuem unidades de análise diferentes. Nos indicadores calculados por pessoa, os recortes por curso utilizam exclusivamente o curso selecionado pela regra do maior nível.</td>
+    </tr>
+    <tr>
+      <td><strong>Deduplicação por curso-pessoa</strong></td>
+      <td>Na taxa de evasão e na trajetória acadêmica, contabiliza-se uma ocorrência de evasão por par curso-pessoa, preservando as evasões em cursos distintos.</td>
+      <td>Permite analisar os diferentes vínculos acadêmicos da mesma pessoa sem contar repetidamente o mesmo par curso-pessoa.</td>
+      <td>Uma pessoa com evasões em cursos distintos contribui com mais de uma ocorrência. Por isso, os resultados representam ocorrências de evasão e não pessoas únicas.</td>
     </tr>
     <tr>
       <td><strong>Cobertura do emprego restrita ao mercado formal identificado na RAIS</strong></td>

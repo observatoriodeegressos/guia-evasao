@@ -9,7 +9,9 @@ title: "Aspectos metodológicos e fontes de dados"
 
 Os indicadores disponibilizados na Plataforma PNP Evadidos são produzidos por meio do pareamento de registros administrativos já existentes, sem intervenção, experimento ou coleta primária.
 
-A metodologia parte da identificação dos estudantes classificados no agrupamento “Evadidos” da Plataforma Nilo Peçanha e do posterior cruzamento desses registros com bases administrativas e acadêmicas que permitem observar diferentes dimensões de suas trajetórias.
+A metodologia parte da identificação dos registros de matrícula classificados no agrupamento “Evadidos” da Plataforma Nilo Peçanha e do posterior cruzamento desses registros com bases administrativas e acadêmicas que permitem observar diferentes dimensões das trajetórias dos estudantes.
+
+O CPF é a chave de pareamento entre bases. A taxa de evasão e a trajetória acadêmica preservam uma ocorrência de evasão por par curso-pessoa. Os indicadores de empregabilidade, salários, empreendedorismo e produção científica consideram uma única pessoa por CPF, associada ao curso selecionado pela regra do maior nível.
 
 As bases de dados utilizadas, seus domínios, periodicidades e usos principais são apresentadas a seguir.
 
@@ -24,7 +26,7 @@ As bases de dados utilizadas, seus domínios, periodicidades e usos principais s
     </tr>
   </thead>
   <tbody>
-    <tr><td>PNP — Plataforma Nilo Peçanha (2017–2022)</td><td style="text-align: center">Anual</td><td>Fonte censitária da Rede Federal. Fornece o universo de estudantes classificados no agrupamento “Evadidos”, juntamente com informações sobre curso, instituição, unidade de ensino e características sociodemográficas.</td></tr>
+    <tr><td>PNP — Plataforma Nilo Peçanha (2017–2022)</td><td style="text-align: center">Anual</td><td>Fonte censitária da Rede Federal. Fornece os registros de matrícula utilizados no cálculo da taxa de evasão e na identificação dos evadidos, juntamente com informações sobre curso, instituição, unidade de ensino e características sociodemográficas.</td></tr>
   </tbody>
 </table>
 

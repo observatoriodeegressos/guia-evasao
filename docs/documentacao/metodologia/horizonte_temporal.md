@@ -28,6 +28,8 @@ Assim, dados da RAIS, Receita Federal — CNPJ, Plataforma Carolina Bori, CAPES 
 
 Esse desenho estabelece uma separação temporal entre o registro da evasão e a observação de resultados posteriores.
 
+Nesse horizonte, a taxa de evasão e a trajetória acadêmica preservam uma ocorrência de evasão por par curso-pessoa. Nos indicadores de empregabilidade, salários, empreendedorismo e produção científica, cada CPF é contabilizado uma única vez, com seleção do curso evadido de maior nível e, em caso de empate, do registro de evasão mais recente.
+
 O intervalo de pelo menos um ano permite observar a situação da pessoa após a evasão em dimensões como inserção no mercado formal de trabalho, remuneração, empreendedorismo, continuidade da trajetória acadêmica e produção científica.
 
 ## Limites de interpretação

@@ -15,11 +15,9 @@ Esse agrupamento reúne as situações de matrícula classificadas pela PNP como
 
 ## Unidade de observação
 
-A unidade de observação varia conforme o indicador. Para a taxa de evasão e a trajetória acadêmica, utiliza-se o número de evasões, conforme o conceito adotado pela PNP. Cada matrícula classificada como evadida representa uma evasão. Assim, uma pessoa pode contribuir com mais de uma evasão quando abandona cursos distintos.
+A unidade de observação varia conforme o indicador. Para a taxa de evasão e a trajetória acadêmica, utiliza-se o número de evasões identificado a partir dos registros da PNP, com uma ocorrência por par curso-pessoa. Assim, uma pessoa pode contribuir com mais de uma evasão quando abandona cursos distintos.
 
 Para os indicadores de empregabilidade, salários, empreendedorismo e produção científica, a unidade de observação é a pessoa, identificada pelo CPF. O cruzamento com a RAIS, a Receita Federal e a Plataforma Lattes ocorre por esse identificador. Por isso, a pessoa é contada uma única vez em cada indicador, mesmo que tenha evadido de mais de um curso.
-
-Se Maria teve três matrículas e evadiu de dois cursos, o cálculo da taxa de evasão considera duas evasões entre três matrículas. A análise da trajetória acadêmica considera as duas evasões. Já os indicadores de empregabilidade, salários, empreendedorismo e produção científica consideram Maria uma única pessoa.
 
 > **Por esse motivo, a evasão em uma matrícula não significa, necessariamente, que a pessoa interrompeu sua trajetória educacional. Ela pode permanecer em outro curso ou ingressar posteriormente em uma nova formação**.
 
@@ -34,7 +32,7 @@ Para associar essa pessoa a um curso nos recortes dos indicadores, seleciona-se 
 
 Se houver mais de uma evasão no mesmo nível de ensino, seleciona-se o registro de evasão mais recente.
 
-Essa seleção não se aplica à taxa de evasão nem à trajetória acadêmica. Nessas análises, cada matrícula evadida permanece como uma ocorrência. Assim, uma pessoa que evadiu de dois cursos contribui com duas evasões, mesmo que seja contada apenas uma vez nos indicadores por CPF.
+Essa seleção não se aplica à taxa de evasão nem à trajetória acadêmica. Nessas análises, preserva-se uma ocorrência de evasão por par curso-pessoa, mantendo os registros em cursos distintos.
 
 > **Atenção à leitura.** O nível selecionado identifica o curso usado para classificar a pessoa nos recortes dos indicadores. Ele não indica conclusão do curso nem permite atribuir ao curso o resultado observado nas bases externas.
 
@@ -43,8 +41,8 @@ Essa seleção não se aplica à taxa de evasão nem à trajetória acadêmica. 
 
 Registros sem CPF ou com data de nascimento inválida são excluídos da base analítica. Eles não entram no pareamento com bases externas nem no numerador ou denominador da taxa de evasão.
 
-A deduplicação por pessoa ocorre apenas nas etapas em que o indicador utiliza a pessoa como unidade de análise.
+A deduplicação por pessoa ocorre apenas nos indicadores de empregabilidade, salários, empreendedorismo e produção científica.
 
-Essa estrutura permite que análises desagregadas por curso preservem os diferentes vínculos acadêmicos da mesma pessoa. Nessas análises, aplica-se a deduplicação por curso, de modo que cada par curso-pessoa seja contabilizado uma única vez.
+Essa estrutura preserva os diferentes vínculos acadêmicos da mesma pessoa na taxa de evasão e na trajetória acadêmica, com uma ocorrência de evasão por par curso-pessoa. Nos indicadores calculados por pessoa, os recortes por curso utilizam exclusivamente o curso selecionado pela regra do maior nível.
 
 As demais regras estão detalhadas em [Deduplicação]({{ "/documentacao/metodologia/deduplicacao" | relative_url }}).
