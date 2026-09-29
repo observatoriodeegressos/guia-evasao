@@ -23,7 +23,7 @@ A Plataforma Nilo Peçanha constitui a referência para a identificação da tra
     <tr><td><strong>Salários</strong></td><td>Mede salários do mercado formal. Não mede renda obtida através do mercado informal de trabalho, benefícios e pluriemprego.</td></tr>
     <tr><td><strong>Empreendedorismo</strong></td><td>Mede vínculos societários e administrativos com pessoas jurídicas ativas na Receita Federal. Não mede empreendedores sem CNPJ ativo.</td></tr>
     <tr><td><strong>Trajetória Acadêmica</strong></td><td>Identificação de matrículas ou vínculos educacionais em nível de pós-graduação posteriores ao registro da evasão.</td></tr>
-    <tr><td><strong>Produção Científica</strong></td><td>Mensura a atividade técnico-científica dos egressos registradas no currículo lattes. Publicações não auto-declaradas no plataforma lattes não são contabilizadas.</td></tr>
+    <tr><td><strong>Produção Científica</strong></td><td>Mensura a atividade técnico-científica dos evadidos registradas no currículo lattes. Publicações não auto-declaradas no plataforma lattes não são contabilizadas.</td></tr>
   </tbody>
 </table>
 
