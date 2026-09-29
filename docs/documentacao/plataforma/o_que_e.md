@@ -5,11 +5,9 @@ title: "O que é a PNP Evadidos"
 
 # {{ page.title }}
 
-> A **Plataforma PNP Evadidos** é uma plataforma de dados voltada à identificação e ao acompanhamento das trajetórias de estudantes que apresentaram situação de evasão em cursos da Rede Federal de Educação Profissional, Científica e Tecnológica.
-
 A Plataforma Nilo Peçanha constitui a referência para a identificação da trajetória educacional na Rede Federal. Na PNP, são considerados evadidos os estudantes cujas matrículas perderam o vínculo com a instituição antes da conclusão do curso. A classificação decorre das situações de matrícula registradas e validadas segundo as regras metodológicas da própria PNP.
 
-A PNP Evadidos parte dessa informação para ampliar a observação da trajetória das pessoas após o registro da evasão. Para isso, integra os registros educacionais da PNP a outras bases de dados utilizadas pelo projeto.
+> A **A PNP Evadidos** parte dessa informação para ampliar a observação da trajetória das pessoas após o registro da evasão. Para isso, integra os registros educacionais da PNP a outras bases de dados utilizadas pelo projeto.
 
 ## As cinco dimensões de análise
 
@@ -21,11 +19,11 @@ A PNP Evadidos parte dessa informação para ampliar a observação da trajetór
     </tr>
   </thead>
   <tbody>
-    <tr><td><strong>Empregabilidade</strong></td><td>Identificação de vínculos de trabalho observados nas bases utilizadas pelo projeto.</td></tr>
-    <tr><td><strong>Salários</strong></td><td>Remunerações associadas aos vínculos de trabalho identificados.</td></tr>
-    <tr><td><strong>Empreendedorismo</strong></td><td>Identificação de registros de atividade empresarial definidos metodologicamente pelo projeto.</td></tr>
-    <tr><td><strong>Trajetória Acadêmica</strong></td><td>Identificação de matrículas ou vínculos educacionais posteriores ao registro da evasão.</td></tr>
-    <tr><td><strong>Produção Científica</strong></td><td>Identificação da produção acadêmica e científica observável nas fontes utilizadas pelo projeto.</td></tr>
+    <tr><td><strong>Empregabilidade</strong></td><td>Mede a inserção no mercado de trabalho formal. Não contempla modalidades de inserção não registradas em vínculos formais, incluindo trabalho informal, trabalho autônomo sem registro administrativo, ocupações eventuais e outras formas de geração de renda não identificáveis nas bases utilizada.</td></tr>
+    <tr><td><strong>Salários</strong></td><td>Mede salários do mercado formal. Não mede renda obtida através do mercado informal de trabalho, benefícios e pluriemprego.</td></tr>
+    <tr><td><strong>Empreendedorismo</strong></td><td>Mede vínculos societários e administrativos com pessoas jurídicas ativas na Receita Federal. Não mede empreendedores sem CNPJ ativo.</td></tr>
+    <tr><td><strong>Trajetória Acadêmica</strong></td><td>Identificação de matrículas ou vínculos educacionais em nível de pós-graduação posteriores ao registro da evasão.</td></tr>
+    <tr><td><strong>Produção Científica</strong></td><td>Mensura a atividade técnico-científica dos egressos registradas no currículo lattes. Publicações não auto-declaradas no plataforma lattes não são contabilizadas.</td></tr>
   </tbody>
 </table>
 

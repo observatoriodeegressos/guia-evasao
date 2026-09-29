@@ -5,11 +5,7 @@ title: "Perspectivas"
 
 # {{ page.title }}
 
-> **Evolução condicionada às fontes.** A incorporação de novos períodos e novas bases pode ampliar as janelas de acompanhamento, desde que preservados os princípios que garantem rastreabilidade e comparabilidade.
-
-A PNP Evadidos foi estruturada para ampliar a capacidade de acompanhamento longitudinal dos estudantes da Rede Federal.
-
-Sua evolução depende da disponibilidade, qualidade, atualização e possibilidade legal de integração das fontes de dados utilizadas.
+A PNP Evadidos foi estruturada para ampliar a capacidade de acompanhamento longitudinal dos estudantes da Rede Federal. Sua evolução depende da disponibilidade, qualidade, atualização e possibilidade legal de integração das fontes de dados utilizadas.
 
 A incorporação de novos períodos e novas fontes pode ampliar as janelas de acompanhamento das pessoas identificadas como evadidas. Também permite aperfeiçoar indicadores relacionados à inserção profissional, rendimento, empreendedorismo, continuidade dos estudos e produção científica.
 

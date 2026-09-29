@@ -7,7 +7,7 @@ title: "Módulo 4 · Trajetória Acadêmica"
 
 > **Continuidade da formação após a evasão.** A evasão em determinado curso não implica necessariamente interrupção da trajetória educacional. O evadido pode continuar os estudos em outro curso, nível de ensino ou instituição.
 
-O módulo Trajetória Acadêmica identifica registros de continuidade da formação educacional dos evadidos após a evasão observada na Rede Federal.
+O módulo Trajetória Acadêmica identifica registros de continuidade da formação educacional dos evadidos,  em nível de pós-graduação, após a evasão observada na Rede Federal.
 
 A unidade de análise é a ocorrência de evasão, com uma por par curso-pessoa. Uma pessoa pode contribuir com ocorrências em cursos distintos. Não se aplica a deduplicação por CPF nem a seleção de um único curso evadido de maior nível.
 
@@ -63,7 +63,7 @@ As fontes integradas ao módulo permitem identificar determinados registros de p
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Representa a combinação entre o tipo ou nível do curso associado a cada ocorrência de evasão e o tipo ou nível da formação posteriormente identificada, preservando uma ocorrência por par curso-pessoa.</td></tr>
+    <tr><td style="width: 25%"><strong>Definição</strong></td><td>Representa a combinação entre o tipo de curso associado a cada evasão e o tipo de curso posteriormente identificado, preservando uma ocorrência por par curso-pessoa.</td></tr>
     <tr><td><strong>Polaridade</strong></td><td>Descritivo.</td></tr>
     <tr><td><strong>Agregação máxima / mínima</strong></td><td>Rede Federal / Campus</td></tr>
     <tr><td><strong>Modelo matemático</strong></td><td>Fluxo<sub>origem → destino</sub> = ∑ Trajetórias<sub>origem → destino</sub><br>Cada trajetória contabilizada corresponde a uma ocorrência de evasão por par curso-pessoa com destino elegível identificado.</td></tr>

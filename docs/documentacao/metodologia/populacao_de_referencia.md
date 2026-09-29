@@ -5,8 +5,6 @@ title: "População de referência"
 
 # {{ page.title }}
 
-> **Entrada pelo agrupamento “Evadidos” da PNP.** A plataforma adota integralmente a classificação existente na Plataforma Nilo Peçanha como regra de entrada no universo analisado. Não redefine as situações de matrícula.
-
 A população de referência é composta pelos estudantes classificados no agrupamento “Evadidos” da Plataforma Nilo Peçanha, em qualquer instituição da Rede Federal de Educação Profissional, Científica e Tecnológica.
 
 A Plataforma PNP Evadidos adota integralmente o agrupamento da categoria “Evadidos” definido pela PNP.

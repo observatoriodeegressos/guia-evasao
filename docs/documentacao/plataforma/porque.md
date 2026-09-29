@@ -5,8 +5,6 @@ title: "O porquê da PNP Evadidos"
 
 # {{ page.title }}
 
-> **Da mensuração da evasão ao acompanhamento da trajetória.** Os indicadores tradicionais respondem quantas matrículas evadiram. A PNP Evadidos foi estruturada para contribuir com o que acontece depois.
-
 A Plataforma Nilo Peçanha permite identificar e mensurar a evasão na Rede Federal. Entre seus indicadores estão o número de evadidos, o percentual de evasão anual e o percentual de evasão por ciclo.
 
 Esses indicadores respondem a uma questão fundamental: **quantas matrículas apresentam situação de evasão?**

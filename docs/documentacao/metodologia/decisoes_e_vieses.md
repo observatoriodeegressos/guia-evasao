@@ -18,8 +18,8 @@ title: "Decisões metodológicas e seus vieses"
   </thead>
   <tbody>
     <tr>
-      <td><strong>Intervalo temporal entre a evasão e a RAIS de 2023</strong></td>
-      <td>Utilizar a RAIS de 2023 para observar vínculos formais de estudantes classificados como evadidos na PNP até 2022.</td>
+      <td><strong>Intervalo temporal de 1 ano entre a evasão e a consulta à base de empregabilidade </strong></td>
+      <td>Utilizar dados de evadidos registrados na PNP até o ano imediatamente anterior ao da RAIS </td>
       <td>A separação temporal permite observar a inserção profissional após o registro de evasão e evita tratar resultados ocorridos antes da evasão como resultados posteriores.</td>
       <td>Pessoas que ingressam no mercado formal depois da janela observada não são identificadas nesse período. A limitação pode afetar grupos com inserção profissional mais tardia ou residentes em mercados de trabalho com menor oferta de emprego formal. Uma janela de acompanhamento mais longa pode identificar vínculos posteriores.</td>
     </tr>

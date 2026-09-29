@@ -5,8 +5,6 @@ title: "Horizonte temporal e defasagem"
 
 # {{ page.title }}
 
-> **Separação de pelo menos um ano entre a evasão e a observação.** Registros de evasão na PNP até 2022 são pareados com as fontes dos módulos referentes a 2023, garantindo que o resultado observado seja posterior ao evento.
-
 A plataforma utiliza dados de evadidos registrados na PNP até o ano imediatamente anterior ao das fontes principais de informações dos módulos.
 
 Assim, dados da RAIS, Receita Federal — CNPJ, Plataforma Carolina Bori, CAPES e Plataforma Lattes referentes ao ano de 2023 são pareados com os registros de estudantes classificados como evadidos na PNP até o ano-base de 2022.

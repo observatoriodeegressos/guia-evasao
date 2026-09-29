@@ -5,8 +5,6 @@ title: "Aspectos metodológicos e fontes de dados"
 
 # {{ page.title }}
 
-> **Pareamento de registros administrativos existentes.** Os indicadores são produzidos sem intervenção, experimento ou coleta primária. A PNP identifica a população; as demais bases fornecem os resultados observados após a evasão.
-
 Os indicadores disponibilizados na Plataforma PNP Evadidos são produzidos por meio do pareamento de registros administrativos já existentes, sem intervenção, experimento ou coleta primária.
 
 A metodologia parte da identificação dos registros de matrícula classificados no agrupamento “Evadidos” da Plataforma Nilo Peçanha e do posterior cruzamento desses registros com bases administrativas e acadêmicas que permitem observar diferentes dimensões das trajetórias dos estudantes.
@@ -70,8 +68,6 @@ As bases de dados utilizadas, seus domínios, periodicidades e usos principais s
 
 ## Origem dos resultados
 
-A PNP constitui a fonte de identificação da população analisada.
-
-> **As demais bases fornecem informações sobre resultados observados após a evasão.** Portanto, informações sobre emprego, remuneração, empreendedorismo, continuidade dos estudos ou produção científica não são provenientes da PNP, mas do pareamento entre seus registros e as respectivas fontes administrativas.
+A PNP constitui a fonte de identificação da população analisada. As demais bases fornecem informações sobre resultados observados após a evasão. Portanto, informações sobre emprego, remuneração, empreendedorismo, continuidade dos estudos ou produção científica não são provenientes da PNP, mas do pareamento entre seus registros e as respectivas fontes administrativas.
 
 As referências completas de cada base estão em [Referências]({{ "/documentacao/referencias/referencias" | relative_url }}).

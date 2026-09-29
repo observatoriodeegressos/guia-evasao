@@ -15,11 +15,7 @@ Esse processo consolidou uma estrutura nacional de informações sobre cursos, i
 
 A existência de dados individualizados sobre as matrículas tornou possível identificar estudantes cuja situação foi classificada como evasão segundo as regras da PNP.
 
-## A ampliação da perspectiva
-
-A PNP Evadidos amplia essa perspectiva.
-
-Em vez de encerrar a observação no momento em que determinada matrícula recebe uma situação de evasão, o projeto utiliza esse evento como referência temporal para investigar registros posteriores encontrados em outras fontes de dados.
+A PNP Evadidos amplia essa perspectiva. Em vez de encerrar a observação no momento em que determinada matrícula recebe uma situação de evasão, o projeto utiliza esse evento como referência temporal para investigar registros posteriores encontrados em outras fontes de dados.
 
 ## Duas etapas analíticas
 
